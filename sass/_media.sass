@@ -7,6 +7,14 @@
   .navbar
     &__item
       margin-right: 20px
+  .useful-articles
+    &__preview
+      flex-basis: 73%
+    &__tabs
+      flex-basis: 27%
+    &__img
+      max-width: 100%
+      height: 100%
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -15,40 +23,70 @@
     &__item
       &:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8)
         display: none
-
+  .useful-articles
+    &__preview
+      flex-basis: 65%
+    &__tabs
+      flex-basis: 35%
+    &__item
+      padding-left: 15px
+      padding-right: 5px
+    &__chapter
+      margin-bottom: 2px
+    &__info
+      height: 355px
+    &__item
+      height: 88px
+    &__info
+      top: 25px
+      left: 25px
+  .info-article
+    &__title
+      font-size: 30px
+      margin-bottom: 20px
 @media (max-width: 767px)
   .container
     width: 95%
-    position: relative
   .header
+    background-color: #262D33
+    width: 100%
+    position: relative
+    z-index: 10
     &__button
       display: none
       &--mobile
         display: block
     &__wrap
       position: fixed
+      background-color: #262D33
       margin: 0 auto
       top: 0
-      left: 15px
-      right: 15px
+      left: 0
+      right: 0
+      padding-left: 3%
+      padding-right: 3%
   .navbar
     height: 100vh
     position: fixed
-    z-index: 0
     top: 70px
     left: 0
     right: 0
     overflow-y: scroll
-    &__menu
+    &--hidden
       display: none
+    &--visible
+      display: flex
+    &__menu
       flex-direction: column
       align-items: center
       justify-content: start
-      background-color: #fafa
+      background-color: #262D33
       padding-top: 20px
-      height: 120%
-      &--visible
-        display: flex
+      height: 140%
+      position: relative
+      width: 100%
+      z-index: 10
+
     &__item
       margin-bottom: 20px
       margin-right: 0
@@ -58,3 +96,83 @@
     display: flex
     position: relative
     z-index: 10
+  .useful-articles
+    &__preview
+      flex-basis: 65%
+    &__tabs
+      flex-basis: 37%
+    &__wrap
+      position: relative
+    &__preview
+      flex-basis: 100%
+    &__tabs
+      position: absolute
+      width: 100%
+      height: 44px
+      right: 0
+      bottom: 0
+      border-radius: 10px 10px 0 0
+    &__title
+      font-size: 14px
+      padding-left: 10px
+      height: 38px
+      width: 100%
+      display: none
+    &__list
+      display: flex
+      // flex-direction: column
+      height: 100%
+    &__item
+      flex-basis: 25%
+      height: 100%
+      padding: 20px 0
+      display: flex
+      justify-content: center
+      align-items: center
+      &:last-child
+        display: none
+      &::after
+        display: none
+    &__text
+      display: none
+    &__info
+      height: 65%
+  .info-article
+    &__title
+      line-height: 30px
+      font-size: 24px
+      width: 60%
+@media (max-width: 576px)
+  .useful-articles
+    &__info
+      width: 95%
+      height: 70%
+      top: 15px
+      left: 15px
+    &__user
+      position: absolute
+      right: 0
+      bottom: 0
+  .info-article
+    &__title
+      line-height: 30px
+      font-size: 20px
+      width: 80%
+      margin-bottom: 15px
+  .button
+    padding: 7px 15px
+    font-size: 12px
+@media (max-width: 487px)
+  .useful-articles
+    &__info
+      height: 65%
+    &__name
+      display: none
+    &__prof
+      display: none
+    &__chapter
+      font-size: 10px
+  .info-article
+    &__title
+      line-height: 24px
+      font-size: 20px
