@@ -1,0 +1,39 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */
