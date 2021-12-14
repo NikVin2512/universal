@@ -15,6 +15,13 @@
     &__img
       max-width: 100%
       height: 100%
+  .life-hack
+    &__wrap
+      padding: 15px 0 25px 0
+    &__item
+      margin: 0 20px
+      &::after
+        left: -20px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -24,6 +31,7 @@
       &:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8)
         display: none
   .useful-articles
+    padding: 15px 0
     &__preview
       flex-basis: 65%
     &__tabs
@@ -44,9 +52,24 @@
     &__title
       font-size: 30px
       margin-bottom: 20px
+  .life-hack
+    &__list
+      flex-wrap: wrap
+      grid-gap: 20px
+    &__item
+      flex-basis: 40%
+      &:nth-child(3)
+        &::after
+          display: none
+      &::after
+        left: -20%
+
 @media (max-width: 767px)
   .container
     width: 95%
+  body
+    &::after
+      height: 400px
   .header
     background-color: #262D33
     width: 100%
@@ -145,6 +168,9 @@
       font-size: 24px
       width: 60%
 @media (max-width: 576px)
+  body
+    &::after
+      height: 280px
   .useful-articles
     &__info
       width: 95%
@@ -164,6 +190,20 @@
   .button
     padding: 7px 15px
     font-size: 12px
+  .life-hack
+    &__wrap
+      padding: 10px 0 15px 0
+    &__item
+      flex-basis: 100%
+      margin: 0 10px
+      &::after
+        display: none
+    &__img
+      height: 25px
+      width: 25px
+    &__text
+      margin-right: 0
+      font-size: 12px
 @media (max-width: 487px)
   .useful-articles
     &__info
