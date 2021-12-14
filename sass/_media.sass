@@ -1,0 +1,60 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+  .header
+    &__button
+      padding: 9px 38px
+  .navbar
+    &__item
+      margin-right: 20px
+@media (max-width: 992px)
+  .container
+    max-width: 700px
+  .navbar
+    &__menu
+    &__item
+      &:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8)
+        display: none
+
+@media (max-width: 767px)
+  .container
+    width: 95%
+    position: relative
+  .header
+    &__button
+      display: none
+      &--mobile
+        display: block
+    &__wrap
+      position: fixed
+      margin: 0 auto
+      top: 0
+      left: 15px
+      right: 15px
+  .navbar
+    height: 100vh
+    position: fixed
+    z-index: 0
+    top: 70px
+    left: 0
+    right: 0
+    overflow-y: scroll
+    &__menu
+      display: none
+      flex-direction: column
+      align-items: center
+      justify-content: start
+      background-color: #fafa
+      padding-top: 20px
+      height: 120%
+      &--visible
+        display: flex
+    &__item
+      margin-bottom: 20px
+      margin-right: 0
+      &:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8)
+        display: flex
+  .menu-burger
+    display: flex
+    position: relative
+    z-index: 10

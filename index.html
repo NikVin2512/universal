@@ -5,8 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Universal</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <img
+            src="img/logo-header.png"
+            alt="Логотип: Universal"
+            class="logo"
+          />
+          <nav class="navbar">
+            <ul class="navbar__menu">
+              <li class="navbar__item">
+                <button class="header__button header__button--mobile">
+                  ОСТАВИТЬ ЗАЯВКУ
+                </button>
+              </li>
+              <li class="navbar__item"><a href="#">Статьи</a></li>
+              <li class="navbar__item"><a href="#">Новости</a></li>
+              <li class="navbar__item"><a href="#">Горячее</a></li>
+              <li class="navbar__item"><a href="#">HTML</a></li>
+              <li class="navbar__item"><a href="#">CSS</a></li>
+              <li class="navbar__item"><a href="#">JavaScript</a></li>
+              <li class="navbar__item"><a href="#">Web Design</a></li>
+            </ul>
+          </nav>
+          <button class="header__button">ОСТАВИТЬ ЗАЯВКУ</button>
+          <div class="menu-burger">
+            <span class="menu-burger__line"></span
+            ><span class="menu-burger__line"></span
+            ><span class="menu-burger__line"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
