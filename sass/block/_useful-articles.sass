@@ -1,0 +1,98 @@
+.useful-articles
+  height: 570px
+  padding: 30px 0
+  &__wrap
+    display: flex
+    border-radius: 10px
+    overflow: hidden
+  &__preview
+    position: relative
+  &__info
+    position: absolute
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 415px
+    top: 55px
+    left: 55px
+  &__user
+    display: flex
+    align-items: center
+    color: $white
+  &__avatar
+    width: 45px
+    height: 45px
+    margin-right: 10px
+    border-radius: 50%
+  &__name
+    line-height: 20px
+  &__prof
+    font-size: 12px
+    line-height: 15px
+    color: inherit
+    opacity: 0.4
+  &__block
+    display: flex
+    flex-direction: column
+  &__tabs
+    background-color: $white
+    width: 263px
+  &__title
+    height: 59px
+    display: flex
+    align-items: center
+    padding-left: 25px
+  &__item
+    position: relative
+    height: 99px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding-left: 25px
+    &--active
+      background-color: #F5F5F5
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 1px
+      top: 0
+      left: 0
+      background-color: #D9DADB
+  &__chapter
+    font-weight: 900
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    display: block
+    margin-bottom: 8px
+    &--color
+      &-css
+        color: #3BBDC4
+      &-javascript
+        color: #4592FF
+      &-html
+        color: #AC8EE3
+      &-web-design
+        color: #FFA34D
+  &__text
+    max-width: 210px
+    line-height: 20px
+    color: #4B5157
+.info-article
+  &__chapter
+    text-transform: uppercase
+    font-weight: 900
+    font-size: 12px
+    line-height: 15px
+    color: #4592FF
+    margin-bottom: 20px
+  &__title
+    font-family: $roboto
+    font-weight: 900
+    font-size: 40px
+    line-height: 50px
+    color: $white
+    max-width: 598px
+    margin-bottom: 50px

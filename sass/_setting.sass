@@ -1,8 +1,5 @@
 *
   box-sizing: border-box
-
-// Обнуляющий стиль
-
 *
   padding: 0px
   margin: 0px
@@ -34,6 +31,7 @@ body
   font-weight: 400
   hyphens: auto
   position: relative
+  background: #E5E5E5
   &::after
     content: ''
     position: absolute
@@ -47,3 +45,15 @@ body
 .container
   max-width: 1140px
   margin: 0 auto
+
+.button
+  background: #4592FF
+  border-radius: 20px
+  display: flex
+  flex-direction: row
+  align-items: center
+  padding: 10px 20px
+  color: $white
+  &--read
+    img
+      margin-left: 8px
