@@ -266,6 +266,7 @@ body::after {
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 25px;
+  cursor: pointer;
 }
 
 .useful-articles__item--active {
