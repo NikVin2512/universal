@@ -1,0 +1,263 @@
+.blog-article
+  padding: 30px 0
+  &__wrap
+    display: flex
+  &__content
+    display: flex
+    flex-wrap: wrap
+  &__chapter
+    font-weight: 900
+    font-size: 12px
+    line-height: 15px
+    display: flex
+    align-items: center
+    letter-spacing: 0.5px
+    text-transform: uppercase
+  &__sidebar
+    max-width: 263px
+.content-blog
+  &__wrap
+    display: flex
+    flex-direction: column
+    height: 100%
+  &__item
+    margin-right: 29px
+    background: $white
+    border-radius: 10px
+    overflow: hidden
+    &--one
+      width: 555px
+      margin-bottom: 30px
+    &--two
+      margin-right: 0
+      width: 263px
+      margin-bottom: 30px
+    &--three
+      width: 263px
+    &--four
+      width: 555px
+      margin-right: 0
+      background: #E5E5E5
+  &__title
+    font-family: $roboto
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    text-align: left
+    &--pd
+      padding: 15px 20px 30px 20px
+  &__text
+    margin-top: 5px
+    margin-bottom: 10px
+  &__list
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    &-item
+      padding: 25px 25px 30px 25px
+      margin: 0 29px 30px 0
+      background: $white
+      border-radius: 10px
+      width: 263px
+      &:nth-child(2)
+        margin-right: 0
+      &:nth-child(3)
+        margin-bottom: 0
+      &:last-child
+        margin-right: 0
+        margin-bottom: 0
+  &__popular
+    padding: 19px 26px 25px 25px
+    height: 100%
+.info-blog
+  padding: 35px 35px 49px 35px
+  &__title
+    font-weight: bold
+    font-size: 25px
+    line-height: 30px
+    max-width: 238px
+    margin-bottom: 25px
+    margin-top: 25px
+  &__text
+    line-height: 20px
+    color: #4B5157
+    max-width: 228px
+.comment-blog
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding-top: 12px
+  position: relative
+  padding: 13px 35px 13px 35px
+  width: 100%
+  &::after
+    content: ''
+    width: 100%
+    height: 1px
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    background-color: #D9DADB
+  &__avatar
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    margin-right: 10px
+  &__name
+    font-weight: 600
+    margin-right: 5px
+  &__text
+    color: #4B5157
+    margin-right: 15px
+.popular-blog
+  position: relative
+  background-image: url(../img/popular-blog-bg.jpg)
+  background-repeat: no-repeat
+  background-position: cover
+  background-size: 100% 100%
+  justify-content: space-between
+  height: 100%
+  &__tag
+    display: flex
+    align-items: center
+    padding: 5px 12px
+    background: #3DC47E
+    border-radius: 3px
+    color: $white
+    position: absolute
+    top: 19px
+    left: 25px
+  &__title
+    margin-top: 23px
+    margin-bottom: 27px
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: $white
+  &__user
+    display: flex
+.user-blog
+  &__avatar
+    width: 45px
+    height: 45px
+    border-radius: 50%
+    margin-right: 10px
+  &__name
+    flex-basis: 100%
+    color: $white
+    opacity: 0.85
+  &__info
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    opacity: 0.4
+  &__date
+    margin-right: 7px
+    color: $white
+  &__score
+    margin-right: 7px
+    color: $white
+  &__like
+    color: $white
+.sidebar-blog
+  &__item
+    width: 263px
+    &--one
+      display: flex
+      flex-direction: column
+      background: #3BBDC4
+      border-radius: 10px
+      margin-bottom: 30px
+    &--two
+      background: $white
+      border-radius: 10px
+      margin-bottom: 30px
+    &--three
+      padding: 30px 25px 40px 25px
+      background: #FFFFFF
+      border-radius: 10px
+  &__info
+    padding: 25px 25px 19px 25px
+  &__title
+    font-size: 16px
+    line-height: 25px
+    margin-bottom: 10px
+    color: $white
+  &__size
+    color: #C1F4F5
+    margin-bottom: 19px
+  &__download
+    color: $white
+    display: flex
+    text-align: center
+    padding: 13px 90px
+    position: relative
+    img
+      margin-right: 10px
+    &::after
+      content: ''
+      width: 100%
+      height: 1px
+      position: absolute
+      left: 0
+      top: 0
+      right: 0
+      opacity: 0.75
+      background-color: #96E2E3
+  &__name-block
+    font-weight: 900
+    font-size: 14px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    padding: 20px 25px 19px 25px
+  &__tags
+    display: flex
+    flex-wrap: wrap
+    padding: 25px 25px 25px 25px
+    &-item
+      font-weight: 900
+      display: flex
+      align-items: center
+      justify-content: space-between
+      border: 1px solid #D9DADB
+      border-radius: 5px
+      padding: 5px 15px
+      max-width: 100%
+      margin-right: 10px
+      margin-bottom: 15px
+      &:nth-child(11)
+        margin-right: 0
+      &:nth-child(12),&:nth-child(13)
+        margin-bottom: 0
+
+  &__social
+    display: flex
+    align-items: center
+    justify-content: space-around
+    width: 100%
+    margin-top: 25px
+    &-title
+      font-size: 20px
+      line-height: 25px
+      text-align: center
+    &-link
+      height: 50px
+      width: 50px
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      background-color: #4267B2
+      &:nth-child(2)
+        background-color: #1DA1F2
+      &:last-child
+        background-color: #FF0000
+.article-chapter
+  color: #6E99AE
+.popular-chapter
+  color: #E7D9FF
+  &--mt
+    margin-top: 146px
