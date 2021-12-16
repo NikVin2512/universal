@@ -321,14 +321,18 @@
                   </p>
                 </div>
                 <div class="content-blog__comment comment-blog">
-                  <img
-                    src="img/avatar.png"
-                    alt="Аватар"
-                    class="comment-blog__avatar"
-                  />
-                  <div class="comment-blog__name">Инна Квашова:</div>
-                  <div class="comment-blog__text">
-                    Каждый разработчик мечтает переехать в...
+                  <div class="comment-blog__block">
+                    <img
+                      src="img/avatar.png"
+                      alt="Аватар"
+                      class="comment-blog__avatar"
+                    />
+                    <div class="comment-blog__info">
+                      <span class="comment-blog__name">Инна Квашова:</span>
+                      <span class="comment-blog__text">
+                        Каждый разработчик мечтает переехать в...
+                      </span>
+                    </div>
                   </div>
                   <div class="score">
                     <img src="img/score.svg" alt="Колличество" />
@@ -377,7 +381,7 @@
               </div>
             </div>
             <div class="content-blog__item content-blog__item--three">
-              <div class="content-blog__wrap">
+              <div class="content-blog__wrapper">
                 <img
                   src="img/blog-bg.jpg"
                   alt="Задний фон"
@@ -397,7 +401,7 @@
                       Как выбрать подходящие исходники, если вы ищите идею для
                       интерфейса
                     </div>
-                    <div class="date">
+                    <div class="date date__content-blog">
                       <span class="date__num">15</span>
                       <span class="date__month">октября</span>
                     </div>
@@ -408,7 +412,7 @@
                       Как защититься от бесконечных правок на этапе сдачи
                       проекта
                     </div>
-                    <div class="date">
+                    <div class="date date__content-blog">
                       <span class="date__num">15</span>
                       <span class="date__month">октября</span>
                     </div>
@@ -421,7 +425,7 @@
                       Обустройте свое рабочее место так, чтобы не испытывать
                       раздражение от скрипучего...
                     </div>
-                    <div class="date">
+                    <div class="date date__content-blog">
                       <span class="date__num">15</span>
                       <span class="date__month">октября</span>
                     </div>
@@ -432,7 +436,7 @@
                       Как не платить за софт, если у вас есть студенческий билет
                       высшего учебного заведения
                     </div>
-                    <div class="date">
+                    <div class="date date__content-blog">
                       <span class="date__num">15</span>
                       <span class="date__month">октября</span>
                     </div>
@@ -445,7 +449,8 @@
             <div class="sidebar-blog__item sidebar-blog__item--one">
               <div class="sidebar-blog__info">
                 <h3 class="sidebar-blog__title">
-                  Чек-лист сдачи верстки вашему заказчику
+                  Чек-лист сдачи
+                  <span class="display-none">верстки вашему заказчику</span>
                 </h3>
                 <span class="sidebar-blog__size">PDF, 125 Мб</span>
               </div>
