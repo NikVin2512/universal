@@ -1,0 +1,140 @@
+.news
+  margin-bottom: 60px
+  &__wrap
+    display: flex
+  &__item
+  &__content
+    margin-right: 29px
+    max-width: 848px
+    border-radius: 10px
+    overflow: hidden
+    background-color: $white
+    padding: 0 25px
+  &-item
+    display: flex
+    position: relative
+    padding: 25px 0
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 1px
+      background: #D9DADB
+    &:last-child
+      &::before
+        display: none
+    &__img
+      min-width: 336px
+      height: 195px
+      margin-right: 25px
+    &__content
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    &__chapter
+      font-weight: 700
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      margin-top: 5px
+      margin-bottom: 15px
+      &--news
+        color: #4592FF
+      &--opinion
+        color: #3BBDC4
+      &--hot
+        color: #FF4F52
+      &--collections
+        color: #AC8EE3
+    &__favorite
+      position: absolute
+      top: 25px
+      right: 0
+      width: 14px
+      height: 18px
+    &__block
+      max-width: 437px
+    &__title
+      font-family: $roboto
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      margin-bottom: 10px
+    &__text
+      color: #4B5157
+      margin-bottom: 20px
+    &__info
+      display: flex
+    &__date
+      margin-right: 11px
+    &__score
+      margin-right: 11px
+  &-sidebar
+    background-color: $white
+    border-radius: 10px
+    max-width: 263px
+    height: 100%
+    &__title
+      display: flex
+      align-items: center
+      justify-content: center
+      padding: 20px 0
+      font-weight: 700
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 1px
+        background: #D9DADB
+    &__list
+      padding: 0 25px
+    &__item
+      display: flex
+      padding: 17px 0
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 1px
+        background: #D9DADB
+      &:last-child
+        &::before
+          display: none
+    &__img
+      width: 60px
+      height: 60px
+      margin-right: 10px
+    &__info
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    &__text
+      color: #4B5157
+    &__more
+      display: flex
+      align-items: center
+      justify-content: center
+      padding: 11px 0 14px 0
+      font-weight: 900
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 1px
+        background: #D9DADB

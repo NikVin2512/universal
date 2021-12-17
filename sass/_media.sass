@@ -107,6 +107,20 @@
       margin-bottom: 15px
     &__download
       padding: 9px 70px
+  .news
+    &__content
+      flex-basis: 75%
+      margin-right: 19px
+    &-item
+      &__img
+        min-width: 270px
+    &-sidebar
+      max-width: 223px
+      &__img
+        width: 50px
+        height: 50px
+      &__text
+        font-size: 12px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -180,6 +194,17 @@
   .info-blog
     background-size: 112px 119px
     background-position: bottom right
+  .news
+    &-item
+      flex-direction: column
+      &__img
+        width: 100%
+        margin: 0
+      &__block
+        position: relative
+        margin-top: 15px
+      &__favorite
+        top: 5px
 @media (max-width: 767px)
   .container
     width: 95%
@@ -349,6 +374,15 @@
     &__title
       font-size: 30px
       line-height: 40px
+  .news
+    &__content
+      flex-basis: 100%
+      margin-right: 0
+    &-item
+      &__block
+        max-width: 100%
+    &-sidebar
+      display: none
 @media (max-width: 576px)
   body
     &::after
@@ -415,3 +449,12 @@
     &__title
       line-height: 24px
       font-size: 20px
+  .news
+    &__content
+      padding: 0 15px
+    &-item
+      padding: 15px 0
+      &__title
+        font-size: 18px
+    &-sidebar
+      display: none
