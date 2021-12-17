@@ -898,6 +898,30 @@ body::after {
   margin-top: 146px;
 }
 
+.random {
+  padding: 50px 0 55px 0;
+  background-image: url(../img/random-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  margin-bottom: 60px;
+}
+
+.random__title {
+  font-family: "Roboto Slab", serif;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 0 auto;
+  max-width: 946px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.random__button {
+  margin: 0 auto;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1387,6 +1411,14 @@ body::after {
   .popular-chapter--mt {
     margin-top: 50px;
   }
+  .random {
+    padding: 30px 0 35px 0;
+    margin-bottom: 30px;
+  }
+  .random__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1433,6 +1465,9 @@ body::after {
     margin-right: 0;
     font-size: 12px;
   }
+  .blog-article {
+    padding: 15px 0 10px 0;
+  }
   .sidebar-blog {
     display: none;
   }
@@ -1440,6 +1475,15 @@ body::after {
     max-width: 100%;
     margin: 0;
     padding: 0;
+  }
+  .random {
+    padding: 20px 0 25px 0;
+    margin-bottom: 30px;
+  }
+  .random__title {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 15px;
   }
 }
 
