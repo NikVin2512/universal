@@ -259,6 +259,27 @@
       &__item
         padding: 20px 15px 25px 15px
         min-height: 100%
+  .footer
+    &__logo
+      margin-right: 15px
+    &-top
+      flex-wrap: wrap
+      &__list
+        flex-basis: 33.33%
+        &:nth-child(1),&:nth-child(2),&:nth-child(3)
+          margin-bottom: 30px
+    &-middle
+      &__item
+        margin-right: 10px
+        &:last-child
+          margin-right: 0
+      &__social
+        &-link
+          margin-right: 10px
+    &-bottom
+      flex-direction: column
+      &__text
+        margin-bottom: 10px
 @media (max-width: 767px)
   .container
     width: 95%
@@ -452,6 +473,24 @@
       margin-bottom: 20px
     &__input
       margin-bottom: 10px
+  .footer
+    &__logo
+      margin-bottom: 10px
+    &-top
+      &__list
+        flex-basis: 50%
+        &:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4)
+          margin-bottom: 30px
+    &-middle
+      flex-direction: column
+      align-items: start
+
+      &__block
+        flex-direction: column
+        align-items: start
+        margin-bottom: 10px
+      &__list
+        flex-direction: column
 @media (max-width: 576px)
   body
     &::after
@@ -520,6 +559,13 @@
       margin-bottom: 15px
     &__input
       margin-bottom: 10px
+  .footer
+    &-top
+      padding-bottom: 34px
+    &-middle
+      padding: 15px 0
+    &-bottom
+      padding: 20px 0
 @media (max-width: 487px)
   .useful-articles
     &__info
