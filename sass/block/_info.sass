@@ -1,0 +1,147 @@
+.info
+  padding-bottom: 60px
+  padding-top: 60px
+  background: #262D33
+  &__wrap
+    display: flex
+    justify-content: space-between
+  &-slider
+    width: 555px
+    // position: relative
+    &__slide
+      width: 555px
+      height: 570px
+      overflow: hidden
+      border-radius: 10px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+        z-index: 1
+    &__img
+      width: 555px
+      height: 570px
+      object-fit: cover
+    &__tag
+      position: absolute
+      top: 18px
+      left: 19px
+      background: #3DC47E
+      border-radius: 3px
+      display: flex
+      flex-direction: row
+      align-items: center
+      padding: 5px 12px
+      color: $white
+      z-index: 2
+    &__content
+      position: absolute
+      z-index: 3
+      top: 60px
+      left: 0
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+      justify-content: center
+    &__user
+      color: $white
+    &__avatar
+      border-radius: 50%
+      margin-bottom: 8px
+    &__prof
+      font-size: 12px
+      line-height: 15px
+      opacity: 0.4
+      margin-top: 2px
+    &__title
+      font-family: $roboto
+      font-weight: bold
+      font-size: 40px
+      line-height: 50px
+      color: $white
+      margin-bottom: 45px
+    &__block
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+    &__picture
+      margin-right: 8px
+    &__score
+      margin-left: 8px
+    &__button
+      margin-bottom: 105px
+  &-article
+    width: 555px
+    &__main
+      // padding: 35px 0 50px 35px
+      // background: url(../img/info-article-bg.png)
+      background-color: #B4D1E0
+      // background-position: top left
+      // background-size: 100% 100%
+      height: 370px
+      border-radius: 10px
+      position: relative
+      margin-bottom: 30px
+      overflow: hidden
+      // &::before
+      //   content: ''
+      //   position: absolute
+      //   width: 260px
+      //   height: 260px
+      //   top: 65px
+      //   right: 30px
+      //   z-index: 0
+      //   background-color: #D1E2EB
+      //   border-radius: 50%
+
+      &-title
+        font-family: $roboto
+        font-weight: bold
+        font-size: 25px
+        line-height: 30px
+        color: #262D33
+        margin-bottom: 15px
+        max-width: 243px
+      &-text
+        color: #4B5157
+        max-width: 213px
+        margin-bottom: 45px
+    &__chapter
+      font-weight: 700
+      font-size: 12px
+      line-height: 15px
+      color: #6E99AE
+      letter-spacing: 0.5px
+      margin-bottom: 20px
+    &__block
+      position: absolute
+      top: 35px
+      left: 35px
+    &__secondary
+      display: flex
+      justify-content: space-between
+      max-height: 100%
+      &-title
+        font-family: $roboto
+        font-size: 16px
+        line-height: 25px
+        margin-bottom: 5px
+      &-text
+        color: #4B5157
+        margin-bottom: 10px
+    &__item
+      flex-basis: 47.5%
+      padding: 25px 25px 30px 25px
+      background: $white
+      border-radius: 10px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      min-height: 100%

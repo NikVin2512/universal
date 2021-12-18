@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -830,7 +831,139 @@
         </div>
       </div>
     </section>
+    <section class="info">
+      <div class="container">
+        <div class="info__wrap">
+          <div class="info-slider">
+            <div class="swiper info-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide info-slider__slide">
+                  <span class="info-slider__tag">Горячее</span>
+                  <img
+                    src="img/slider-img.jpg"
+                    alt="Картинка"
+                    class="info-slider__img"
+                  />
+                  <div class="info-slider__content">
+                    <div class="info-slider__user">
+                      <img
+                        src="img/info-avatar.png"
+                        class="info-slider__avatar"
+                      />
+                      <div class="info-slider__name">Оксана Пушкина</div>
+                      <div class="info-slider__prof">Фотограф</div>
+                    </div>
+                    <div class="info-slider__block">
+                      <h2 class="info-slider__title">
+                        Выбор читателей: где удобнее работать фрилансеру
+                      </h2>
+                      <button class="button info-slider__button">
+                        <img
+                          src="img/picture.png"
+                          alt="иконка: фотографии"
+                          class="info-slider__picture"
+                        />Смотреть фото<span class="info-slider__score"
+                          >26</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide info-slider__slide">
+                  <span class="info-slider__tag">Горячее</span>
+                  <img
+                    src="img/slider-img.jpg"
+                    alt="Картинка"
+                    class="info-slider__img"
+                  />
+                  <div class="info-slider__content">
+                    <div class="info-slider__user">
+                      <img
+                        src="img/info-avatar.png"
+                        class="info-slider__avatar"
+                      />
+                      <div class="info-slider__name">Оксана Пушкина</div>
+                      <div class="info-slider__prof">Фотограф</div>
+                    </div>
+                    <div class="info-slider__block">
+                      <h2 class="info-slider__title">
+                        Выбор читателей: где удобнее работать фрилансеру
+                      </h2>
+                      <button class="button info-slider__button">
+                        <img
+                          src="img/picture.png"
+                          alt="иконка: фотографии"
+                          class="info-slider__picture"
+                        />Смотреть фото<span class="info-slider__score"
+                          >26</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info__article info-article">
+            <div class="info-article__main">
+              <img
+                class="info-article__main-bg"
+                src="img/info-article-bg.png"
+                alt="Человек"
+              />
+              <div class="info-article__block">
+                <span class="info-article__chapter">Карьера</span>
+                <div class="info-article__main-title">
+                  Вопросы на собеседовании для джуна
+                </div>
+                <div class="info-article__main-text">
+                  Каверзные и не очень вопросы, которых боятся новички, когда
+                  идут на собеседование
+                </div>
+                <button class="button button--read info-article__button">
+                  Читать далее <img src="img/arrow.svg" alt="стрелка" />
+                </button>
+              </div>
+            </div>
+            <div class="info-article__secondary">
+              <div class="info-article__item">
+                <div class="info-article__item-block">
+                  <div class="info-article__secondary-title">
+                    Зарядка для глаз
+                  </div>
+                  <div class="info-article__secondary-text">
+                    Эти несколько упражнений помогут сохранить зрение. Можно
+                    делать их даже если...
+                  </div>
+                </div>
+                <div class="date info-article__date">
+                  <span class="date__num">25</span>
+                  <span class="date__month">сентября</span>
+                </div>
+              </div>
+              <div class="info-article__item">
+                <div class="info-article__item-block">
+                  <div class="info-article__secondary-title">
+                    Топ плагинов jQuery
+                  </div>
+                  <div class="info-article__secondary-text">
+                    Какие плагины помогут быстро создать галерею, выпадающие
+                    списки или окна
+                  </div>
+                </div>
+                <div class="date info-article__date">
+                  <span class="date__num">25</span>
+                  <span class="date__month">сентября</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

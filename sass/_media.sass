@@ -121,6 +121,38 @@
         height: 50px
       &__text
         font-size: 12px
+  .info
+    padding: 50px 0
+    &-slider
+      width: 465px
+      &__slide
+        width: 465px
+        height: 480px
+      &__title
+        font-size: 35px
+      &__img
+        width: 465px
+        height: 480px
+    &-article
+      width: 465px
+      &__main
+        height: 265px
+        margin-bottom: 30px
+        &-bg
+          width: 100%
+          height: 100%
+        &-title
+          font-size: 23px
+          margin-bottom: 10px
+        &-text
+          margin-bottom: 15px
+      &__block
+        top: 15px
+        left: 20px
+      &__item
+        padding: 20px 15px 25px 15px
+        min-height: 100%
+
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -205,6 +237,28 @@
         margin-top: 15px
       &__favorite
         top: 5px
+  .info
+    padding: 40px 0
+    &__wrap
+      flex-direction: column
+    &-slider
+      margin-bottom: 25px
+      width: 100%
+      &__slide
+        width: 100%
+      &__title
+        font-size: 35px
+      &__img
+        width: 100%
+    &-article
+      width: 100%
+      &__main
+        &-bg
+          object-fit: contain
+          object-position: right
+      &__item
+        padding: 20px 15px 25px 15px
+        min-height: 100%
 @media (max-width: 767px)
   .container
     width: 95%
@@ -383,6 +437,10 @@
         max-width: 100%
     &-sidebar
       display: none
+  .info
+    &-slider
+      &__title
+        max-width: 80%
 @media (max-width: 576px)
   body
     &::after
@@ -435,6 +493,11 @@
       font-size: 20px
       line-height: 30px
       margin-bottom: 15px
+  .info
+    &-slider
+      &__title
+        font-size: 30px
+        line-height: 35px
 @media (max-width: 487px)
   .useful-articles
     &__info
@@ -458,3 +521,49 @@
         font-size: 18px
     &-sidebar
       display: none
+  .info
+    &-slider
+      margin-bottom: 15px
+    &-article
+      &__main
+        margin-bottom: 15px
+        &-bg
+          object-fit: cover
+      &__secondary
+        flex-direction: column
+      &__item
+        flex-basis: 100%
+        &:first-child
+          margin-bottom: 15px
+@media (max-width: 375px)
+  .info
+    &-slider
+      &__slide
+        height: 100%
+        &::after
+          height: 100%
+      &__content
+        top: 35px
+      &__img
+        height: 80%
+      &__title
+        max-width: 100%
+        font-size: 20px
+        line-height: 25px
+        margin-bottom: 15px
+      &__name, &__prof
+        display: none
+      &__tag
+        top: 10px
+        left: 10px
+        font-size: 10px
+        padding: 2px 8px
+    &-article
+      &__main
+        &-bg
+          display: none
+@media (max-width: 340px)
+  .info
+    &-slider
+      &__content
+        top: 15px
