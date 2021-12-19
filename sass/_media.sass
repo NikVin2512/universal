@@ -1,6 +1,8 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+    &-article
+      max-width: 766px
   .header
     &__button
       padding: 9px 38px
@@ -152,10 +154,17 @@
       &__item
         padding: 20px 15px 25px 15px
         min-height: 100%
-
+  .slider-head
+    &__title
+      font-size: 45px
+      max-width: 616px
+    &__text
+      max-width: 552px
 @media (max-width: 992px)
   .container
     max-width: 700px
+    &-article
+      max-width: 516px
   .navbar
     &__menu
     &__item
@@ -280,9 +289,22 @@
       flex-direction: column
       &__text
         margin-bottom: 10px
+  .slider-head
+    padding: 43px 0 52px 0
+    height: 490px
+    &__title
+      font-size: 35px
+      line-height: 50px
+      max-width: 480px
+    &__text
+      font-size: 16px
+      line-height: 26px
+      max-width: 465px
 @media (max-width: 767px)
   .container
     width: 95%
+    &-article
+      width: 95%
   body
     &::after
       height: 400px
@@ -304,6 +326,8 @@
       right: 0
       padding-left: 3%
       padding-right: 3%
+      &-article
+        background-color: $white
   .navbar
     height: 100vh
     position: fixed
@@ -325,6 +349,8 @@
       position: relative
       width: 100%
       z-index: 10
+      &--article
+        background-color: $white
 
     &__item
       margin-bottom: 20px
@@ -335,6 +361,9 @@
     display: flex
     position: relative
     z-index: 10
+    &__line
+      &-article
+        background-color: #262D33
   .useful-articles
     &__preview
       flex-basis: 65%
@@ -491,6 +520,10 @@
         margin-bottom: 10px
       &__list
         flex-direction: column
+  .slider-head
+    &__bookmark
+      left: 100%
+      top: 85px
 @media (max-width: 576px)
   body
     &::after
@@ -566,6 +599,20 @@
       padding: 15px 0
     &-bottom
       padding: 20px 0
+  .slider-head
+    &__title
+      font-size: 25px
+      line-height: 40px
+      max-width: 380px
+      margin-bottom: 20px
+    &__text
+      font-size: 14px
+      line-height: 22px
+      max-width: 350px
+      margin-bottom: 25px
+    &__bookmark
+      left: 90%
+      top: 55px
 @media (max-width: 487px)
   .useful-articles
     &__info
@@ -615,6 +662,25 @@
     &__input
       width: 280px
       height: 30px
+  .slider-head
+    height: 380px
+    padding: 30px 0 20px 0
+    &__top
+      margin-bottom: 32px
+    &__home
+      margin-right: 10px
+      span
+        display: none
+    &__title
+      font-size: 22px
+      line-height: 30px
+    &__text
+      font-size: 14px
+      line-height: 22px
+    &__bookmark
+      width: 15px
+      left: 90%
+      top: 94%
 @media (max-width: 375px)
   .info
     &-slider
