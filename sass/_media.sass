@@ -160,6 +160,11 @@
       max-width: 616px
     &__text
       max-width: 552px
+  .article
+    &-user
+      width: 223px
+      &__top
+        padding-top: 25px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -300,6 +305,30 @@
       font-size: 16px
       line-height: 26px
       max-width: 465px
+  .article
+    &__content
+      margin-right: 10px
+    &-user
+      width: 193px
+      &__top
+        padding: 15px 15px 10px 15px
+    &-slider
+      &__bottom
+        padding: 0 0 0 15px
+      &__user
+        padding: 12px 15px
+        margin-left: 15px
+    &__wrap
+      &--flex
+        flex-direction: column
+    &__sidebar
+      &--order
+        min-width: 100%
+    &-theme
+      min-width: 100%
+      margin-top: 0
+      &__img
+        min-width: 100%
 @media (max-width: 767px)
   .container
     width: 95%
@@ -524,6 +553,48 @@
     &__bookmark
       left: 100%
       top: 85px
+  .article
+    &__sidebar
+      position: relative
+    &-user
+      width: 153px
+      position: absolute
+      left: -150px
+      top: 0
+      &__avatar
+        width: 50px
+        height: 50px
+        margin-bottom: 5px
+      &__name
+        font-size: 14px
+        line-height: 20px
+      &__prof
+        font-size: 12px
+        line-height: 18px
+        margin-bottom: 5px
+      &__quantity
+        font-size: 12px
+        line-height: 18px
+      &__bottom
+        display: none
+    &__text
+      margin-bottom: 20px
+    &-slider
+      &__slide
+        position: relative
+      &__img
+        height: 355px
+      &__arrow
+        width: 40px
+        height: 40px
+      &__bottom
+        position: absolute
+        bottom: 0
+        z-index: 2
+        background-color: $white
+      &__button
+        &--prev
+          left: 45px
 @media (max-width: 576px)
   body
     &::after
@@ -613,6 +684,17 @@
     &__bookmark
       left: 90%
       top: 55px
+  .article
+    &-quote
+      font-size: 22px
+      line-height: 26px
+      margin-bottom: 25px
+      margin-top: 45px
+      &__img
+        width: 30px
+        height: 30px
+        top: -10px
+        left: -10px
 @media (max-width: 487px)
   .useful-articles
     &__info
@@ -681,6 +763,39 @@
       width: 15px
       left: 90%
       top: 94%
+  .article
+    &__letter
+      font-size: 75px
+      line-height: 35px
+    &__text
+      font-size: 14px
+      line-height: 20px
+    &-slider
+      &__slide
+        position: relative
+      &__avatar
+        margin: 0
+      &__bio
+        &-name,&-prof
+          display: none
+      &__bottom
+        font-size: 12px
+        line-height: 16px
+      &__user
+        padding: 5px 10px
+
+      &__text
+        margin-bottom: 15px
+    &-quote
+      font-size: 16px
+      line-height: 20px
+      margin-bottom: 10px
+      margin-top: 25px
+      &__img
+        width: 20px
+        height: 20px
+        top: -5px
+        left: -5px
 @media (max-width: 375px)
   .info
     &-slider
@@ -708,6 +823,18 @@
       &__main
         &-bg
           display: none
+  .article
+    padding-top: 30px
+    &-user
+      width: 60px
+      margin-top: -70px
+      left: -70px
+      &__name,&__prof,&__quantity
+        display: none
+      &__avatar
+        margin: 0
+      &__top
+        padding: 5px 5px 5px 5px
 @media (max-width: 340px)
   .info
     &-slider

@@ -10,3 +10,9 @@ const swiperSlider = new Swiper('.slider-swiper', {
   // slidesPerView: 1,
   
 });
+const swiperArticle = new Swiper('.slider-article', {
+  // Optional parameters
+  loop: true,
+  // slidesPerView: 1,
+  
+});
