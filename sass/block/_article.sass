@@ -1,32 +1,41 @@
 .article
   padding-top: 60px
+  padding-bottom: 30px
   background-color: $white
   &__wrap
     display: flex
     justify-content: space-between
   &__content
-    margin-right: 59px
+    margin-right: 60px
+  &__sidebar
   &__letter
+    font-family: lato-h
+    display: block
     float: left
-    font-size: 100px
-    line-height: 45px
+    font-size: 140px
+    line-height: 75px
     text-align: center
+    margin-left: -10px
     color: #4592FF
-    padding-right: 10px
-    padding-bottom: 8px
   &__text
     font-size: 18px
     line-height: 30px
     color: #4B5157
     margin-bottom: 30px
+    &:nth-child(2)
+      margin-bottom: 45px
   &__title
+    font-family: $roboto
     margin-bottom: 30px
+    font-size: 25px
+    line-height: 30px
+    color: #262D33
   &__user
     display: flex
     flex-direction: column
     align-items: center
   &-user
-    width: 263px
+    width: 267px
     border: 1px solid #D9DADB
     border-radius: 10px
     background-color: $white
@@ -36,7 +45,7 @@
       flex-direction: column
       align-items: center
       justify-content: center
-      padding: 35px 25px 20px 25px
+      padding: 35px 22px 20px 23px
     &__avatar
       width: 90px
       height: 90px
@@ -46,11 +55,12 @@
       font-weight: bold
       font-size: 20px
       line-height: 25px
-      margin-bottom: 5px
+      margin-bottom: 8px
       text-align: center
     &__prof
       color: #4B5157
       margin-bottom: 15px
+      margin-top: 4px
     &__quantity
       font-weight: 700
       color: #262D33
@@ -103,7 +113,7 @@
     &__user
       display: flex
       align-items: center
-      padding: 12px 30px
+      padding: 12px 60px 12px 30px
       position: relative
       &::after
         content: ''
@@ -142,7 +152,7 @@
       &--next
         right: 0
   &-theme
-    margin-top: 150px
+    margin-top: 135px
     &__title
       font-family: $roboto
       font-weight: bold
@@ -152,7 +162,7 @@
       margin-bottom: 20px
     &__img
       border-radius: 10px
-      max-width: 230px
+      max-width: 263px
       max-height: 180px
       margin-bottom: 15px
     &__block
@@ -178,12 +188,17 @@
       display: flex
       position: relative
     &-item
+      // font-size: 12px
+      // line-height: 15px
+      cursor: pointer
       margin-right: 10px
       border: 1px solid #D9DADB
       border-radius: 5px
-      padding: 5px 15px
+      padding: 3px 13px
       font-weight: 700
       color: #262D33
+      &:hover
+        border: 1px solid #4592FF
       &:last-child
         margin-right: 0
   &__repost

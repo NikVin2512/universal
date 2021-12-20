@@ -4,6 +4,14 @@
   padding: 0px
   margin: 0px
   border: 0px
+@font-face
+  font-family: 'lato-h'
+  src: url('../fonts/lato-h.eot')
+  src: url('../fonts/lato-h.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/lato-h.woff') format('woff'),
+  url('../fonts/lato-h.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
 
 a:focus,
 a:active
@@ -49,7 +57,7 @@ body
   max-width: 1140px
   margin: 0 auto
   &-article
-    max-width: 936px
+    max-width: 940px
     margin: 0 auto
     position: relative
 .button
@@ -59,22 +67,29 @@ body
   flex-direction: row
   align-items: center
   padding: 10px 20px
+  font-weight: 700
   color: $white
+  min-height: 40px
   &:hover
     background: darken(#4592FF, 5)
   &--read
     img
-      margin-left: 8px
+      margin-left: 5px
 .date
+  cursor: pointer
   display: flex
   font-size: 12px
   line-height: 15px
   color: #939699
   mix-blend-mode: normal
   &__num
+    font-size: 12px
+    line-height: 15px
     margin-right: 3px
-
+  &__month
+  &__time
 .score
+  cursor: pointer
   display: flex
   align-items: center
   font-size: 12px
@@ -83,6 +98,7 @@ body
   img
     margin-right: 5px
 .like
+  cursor: pointer
   display: flex
   align-items: center
   font-size: 12px
@@ -91,10 +107,12 @@ body
   img
     margin-right: 5px
 .time
+  cursor: pointer
   color: #939699
   font-size: 12px
   line-height: 15px
 .view
+  cursor: pointer
   display: flex
   align-items: center
   font-size: 12px

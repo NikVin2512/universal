@@ -4,7 +4,7 @@
     margin-right: 30px
   &-top
     display: flex
-    justify-content: space-between
+    justify-content: start
     padding-bottom: 64px
     position: relative
     &::before
@@ -18,7 +18,9 @@
     &__list
       padding-top: 35px
       position: relative
-      flex-basis: 16.66%
+      width: 195px
+      &:last-child
+        width: 165px
       &::before
         content: ''
         position: absolute
@@ -47,6 +49,8 @@
     &__item
       color: #4B5157
       margin-bottom: 15px
+      &:hover
+        color: #4592FF
       &:first-child
         color: #262D33
         font-weight: 700
@@ -93,12 +97,20 @@
           margin-right: 0
         &--facebook
           background-color: #4267B2
+          &:hover
+            background: darken(#4267B2, 5)
         &--twitter
           background: #1DA1F2
+          &:hover
+            background: darken(#1DA1F2, 5)
         &--youtube
           background: #FF0000
+          &:hover
+            background: darken(#FF0000, 5)
         &--instagram
           background: #262626
+          &:hover
+            background: darken(#262626, 12)
   &-bottom
     padding: 40px 0 55px 0
     display: flex

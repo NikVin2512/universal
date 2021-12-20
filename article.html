@@ -79,20 +79,18 @@
                       />
                       <span>На главную</span>
                     </a>
-                    <a href="article.html"
-                      ><button
-                        class="slider-head__button slider-head__button--prev"
-                      >
-                        <img src="img/arrow-prev.png" alt="стрелка" />Назад
-                      </button></a
+                    <button
+                      onclick="document.location='article.html'"
+                      class="slider-head__button slider-head__button--prev"
                     >
-                    <a href="article-next.html">
-                      <button
-                        class="slider-head__button slider-head__button--next"
-                      >
-                        Вперед<img src="img/arrow-next.png" alt="стрелка" />
-                      </button>
-                    </a>
+                      <img src="img/arrow-prev.png" alt="стрелка" />Назад
+                    </button>
+                    <button
+                      onclick="document.location='article-next.html'"
+                      class="slider-head__button slider-head__button--next"
+                    >
+                      Вперед<img src="img/arrow-next.png" alt="стрелка" />
+                    </button>
                   </div>
                 </div>
                 <div class="slider-head__content">
@@ -112,8 +110,9 @@
                 <div class="slider-head__info">
                   <div class="date slider-head__date">
                     <img src="img/clock.png" alt="Дата" />
-                    <span class="date__num">25</span>
-                    <span class="date__month">сентября</span>
+                    <span class="date__num">6</span>
+                    <span class="date__month">августа,</span>
+                    <span class="date__time">10:30</span>
                   </div>
                   <div class="like slider-head__like">
                     <img src="img/like-grey.png" alt="Нравится" />
@@ -138,10 +137,13 @@
             <p class="article__text">
               Идейные соображения высшего порядка, а также рамки и место
               обучения кадров играет важную роль в формировании дальнейших
-              направлений развития. Значимость этих проблем настолько очевидна,
-              что постоянное информационно-пропагандистское обеспечение нашей
-              деятельности влечет за собой процесс внедрения и модернизации
-              дальнейших направлений развития.
+              направлений развития. Идейные соображения высшего порядка, а также
+              рамки и место обучения кадров играет важную роль в формировании
+              дальнейших направлений развития. Значимость этих проблем настолько
+              очевидна, что постоянное информационно-пропагандистское
+              обеспечение нашей деятельности влечет за собой процесс внедрения и
+              модернизации дальнейших направлений развития влечет за собой
+              процесс внедрения.
             </p>
             <h2 class="article__title">Введение НПД в РФ</h2>
             <p class="article__text">
@@ -149,8 +151,7 @@
               обучения кадров играет важную роль в формировании дальнейших
               направлений развития. Значимость этих проблем настолько очевидна,
               что постоянное информационно-пропагандистское обеспечение нашей
-              деятельности влечет за собой процесс внедрения и модернизации
-              дальнейших направлений развития.
+              деятельности влечет за собой процесс внедрения и модернизации.
             </p>
             <p class="article__text">
               Идейные соображения высшего порядка, а также рамки и место
@@ -169,11 +170,13 @@
           <div class="article__sidebar">
             <div class="article__user article-user">
               <div class="article-user__top">
-                <img
-                  src="img/avatar-user.png"
-                  alt="Аватар"
-                  class="article-user__avatar"
-                /><span class="article-user__name">Мира Стахова</span
+                <a href="#"
+                  ><img
+                    src="img/avatar-user.png"
+                    alt="Аватар"
+                    class="article-user__avatar" /></a
+                ><a href="#"
+                  ><span class="article-user__name">Мира Стахова</span></a
                 ><span class="article-user__prof">Фрилансер</span>
                 <span class="article-user__quantity">82 статьи</span>
               </div>
@@ -216,14 +219,17 @@
                       specifically the application of statistical methodology
                     </div>
                     <div class="article-slider__user">
-                      <img
-                        src="img/article-slider-avatar.png"
-                        alt="Аватар"
-                        class="article-slider__avatar"
-                      />
+                      <a href="#"
+                        ><img
+                          src="img/article-slider-avatar.png"
+                          alt="Аватар"
+                          class="article-slider__avatar"
+                      /></a>
                       <div class="article-slider__bio">
-                        <span class="article-slider__bio-name"
-                          >Андрей Вашигаев</span
+                        <a href="#"
+                          ><span class="article-slider__bio-name"
+                            >Андрей Вашигаев</span
+                          ></a
                         >
                         <div class="article-slider__bio-prof">Фотограф</div>
                       </div>
@@ -298,9 +304,11 @@
                 class="article-theme__img"
               />
               <div class="article-theme__block">
-                <h4 class="article-theme__block-title">
-                  20+ инструментов для js-разработчика
-                </h4>
+                <a href="article.html"
+                  ><h4 class="article-theme__block-title">
+                    20+ инструментов для js-разработчика
+                  </h4></a
+                >
                 <p class="article-theme__block-text">
                   Узнайте, какими инструментами вы еще не пользовались, а могли
                   бы. Эти инструменты помогут вам ускорить свою работу или
@@ -368,9 +376,11 @@
               alt="Картинка"
               class="previews__img"
             />
-            <h3 class="previews__title">
-              Техника работы по помидоркам — это как?
-            </h3>
+            <a href="article.html"
+              ><h3 class="previews__title">
+                Техника работы по помидоркам — это как?
+              </h3></a
+            >
             <div class="previews__info">
               <div class="view previews__info-view">
                 <img src="img/view.png" alt="Просмотры" />
@@ -388,7 +398,11 @@
               alt="Картинка"
               class="previews__img"
             />
-            <h3 class="previews__title">Вопросы на собеседовании для джуна</h3>
+            <a href="article.html"
+              ><h3 class="previews__title">
+                Вопросы на собеседовании для джуна
+              </h3></a
+            >
             <div class="previews__info">
               <div class="view previews__info-view">
                 <img src="img/view.png" alt="Просмотры" />
@@ -406,7 +420,11 @@
               alt="Картинка"
               class="previews__img"
             />
-            <h3 class="previews__title">Список стран, куда можно улететь</h3>
+            <a href="article.html"
+              ><h3 class="previews__title">
+                Список стран, куда можно улететь
+              </h3></a
+            >
             <div class="previews__info">
               <div class="view previews__info-view">
                 <img src="img/view.png" alt="Просмотры" />
@@ -424,9 +442,11 @@
               alt="Картинка"
               class="previews__img"
             />
-            <h3 class="previews__title">
-              В вашем портфолио могут быть фейковые работы
-            </h3>
+            <a href="article.html"
+              ><h3 class="previews__title">
+                В вашем портфолио могут быть фейковые работы
+              </h3></a
+            >
             <div class="previews__info">
               <div class="view previews__info-view">
                 <img src="img/view.png" alt="Просмотры" />
@@ -449,21 +469,29 @@
               <h2 class="comments__title">Комментарии</h2>
               <div class="comments__score">19</div>
             </div>
-            <button class="comments__button">
+            <button
+              onclick="document.location='#answer'"
+              class="comments__button"
+            >
               <img src="img/pen.png" alt="Ручка" class="comments__pen" />
               Добавить комментарий
             </button>
           </div>
           <div id="comments" class="comments__middle">
             <div class="comments__middle-item">
-              <img
-                src="img/article-slider-avatar.png"
-                alt="Аватар"
-                class="comments__avatar"
-              />
+              <a href="#"
+                ><img
+                  src="img/article-slider-avatar.png"
+                  alt="Аватар"
+                  class="comments__avatar"
+              /></a>
               <div class="comments__content">
                 <div class="comments__content-title">
-                  <div class="comments__content-name">Михаил Степашин</div>
+                  <a href="#"
+                    ><div class="comments__content-name">
+                      Михаил Степашин
+                    </div></a
+                  >
                   <div class="comments__content-date">
                     <span class="comments__day">17</span
                     ><span class="comments__month">июля,</span
@@ -477,7 +505,9 @@
                 </div>
                 <div class="comments__content-nav">
                   <div class="comments__content-answer">
-                    <img src="img/score.svg" alt="Ответ" /> Ответить
+                    <a href="#answer"
+                      ><img src="img/score.svg" alt="Ответ" /> Ответить</a
+                    >
                   </div>
                   <div class="comments__content-block">
                     <img
@@ -501,14 +531,19 @@
               </div>
             </div>
             <div class="comments__middle-item">
-              <img
-                src="img/avatar-user.png"
-                alt="Аватар"
-                class="comments__avatar"
-              />
+              <a href="#"
+                ><img
+                  src="img/avatar-user.png"
+                  alt="Аватар"
+                  class="comments__avatar"
+              /></a>
               <div class="comments__content">
                 <div class="comments__content-title">
-                  <div class="comments__content-name">Михаил Степашин</div>
+                  <a href="#"
+                    ><div class="comments__content-name">
+                      Михаил Степашин
+                    </div></a
+                  >
                   <div class="comments__content-date">
                     <span class="comments__day">17</span
                     ><span class="comments__month">июля,</span
@@ -522,7 +557,9 @@
                 </div>
                 <div class="comments__content-nav">
                   <div class="comments__content-answer">
-                    <img src="img/score.svg" alt="Ответ" /> Ответить
+                    <a href="#answer"
+                      ><img src="img/score.svg" alt="Ответ" /> Ответить</a
+                    >
                   </div>
                   <div class="comments__content-block">
                     <img
@@ -546,10 +583,19 @@
               </div>
             </div>
             <div class="comments__middle-item">
-              <img src="img/avatar.png" alt="Аватар" class="comments__avatar" />
+              <a href="#"
+                ><img
+                  src="img/avatar.png"
+                  alt="Аватар"
+                  class="comments__avatar"
+              /></a>
               <div class="comments__content">
                 <div class="comments__content-title">
-                  <div class="comments__content-name">Михаил Степашин</div>
+                  <a href="#"
+                    ><div class="comments__content-name">
+                      Михаил Степашин
+                    </div></a
+                  >
                   <div class="comments__content-date">
                     <span class="comments__day">17</span
                     ><span class="comments__month">июля,</span
@@ -563,7 +609,9 @@
                 </div>
                 <div class="comments__content-nav">
                   <div class="comments__content-answer">
-                    <img src="img/score.svg" alt="Ответ" /> Ответить
+                    <a href="#answer"
+                      ><img src="img/score.svg" alt="Ответ" /> Ответить</a
+                    >
                   </div>
                   <div class="comments__content-block">
                     <img
@@ -587,14 +635,19 @@
               </div>
             </div>
             <div class="comments__middle-item">
-              <img
-                src="img/info-avatar.png"
-                alt="Аватар"
-                class="comments__avatar"
-              />
+              <a href="#"
+                ><img
+                  src="img/info-avatar.png"
+                  alt="Аватар"
+                  class="comments__avatar"
+              /></a>
               <div class="comments__content">
                 <div class="comments__content-title">
-                  <div class="comments__content-name">Михаил Степашин</div>
+                  <a href="#"
+                    ><div class="comments__content-name">
+                      Михаил Степашин
+                    </div></a
+                  >
                   <div class="comments__content-date">
                     <span class="comments__day">17</span
                     ><span class="comments__month">июля,</span
@@ -608,7 +661,9 @@
                 </div>
                 <div class="comments__content-nav">
                   <div class="comments__content-answer">
-                    <img src="img/score.svg" alt="Ответ" /> Ответить
+                    <a href="#answer"
+                      ><img src="img/score.svg" alt="Ответ" /> Ответить</a
+                    >
                   </div>
                   <div class="comments__content-block">
                     <img
@@ -641,7 +696,12 @@
               alt="Аватар"
               class="comments__form-avatar"
             />
-            <form class="comments-form" action="send.php" method="post">
+            <form
+              id="answer"
+              class="comments-form"
+              action="send.php"
+              method="post"
+            >
               <h3 class="comments__form-title">Что вы думаете на этот счет?</h3>
               <div class="comments__form-wrap">
                 <textarea
@@ -651,6 +711,7 @@
                   cols="30"
                   rows="10"
                   minlength="100"
+                  required
                 ></textarea>
               </div>
               <button
@@ -746,7 +807,7 @@
               <li class="footer-middle__item"><a href="#">Работа у нас</a></li>
               <li class="footer-middle__item"><a href="#">Реклама</a></li>
               <li class="footer-middle__item">
-                <a href="#">Обратная связь</a>
+                <a href="#">Партнерство</a>
               </li>
             </ul>
           </div>

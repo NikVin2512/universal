@@ -24,6 +24,7 @@ $(document).ready(function(){
       messages: {
         message: {
           minlength:"Минимальное колличество символом 100",
+          required: "Заполните поле",
         },
       }
     });
@@ -75,7 +76,9 @@ $(document).ready(function(){
         </div>
         <div class="comments__content-nav">
           <div class="comments__content-answer">
-            <img src="img/score.svg" alt="Ответ" /> Ответить
+          <a href="#answer"
+          ><img src="img/score.svg" alt="Ответ" /> Ответить</a
+        >
           </div>
           <div class="comments__content-block">
             <img
@@ -119,7 +122,9 @@ $(document).ready(function(){
       </div>
       <div class="comments__content-nav">
         <div class="comments__content-answer">
-          <img src="img/score.svg" alt="Ответ" /> Ответить
+        <a href="#answer"
+        ><img src="img/score.svg" alt="Ответ" /> Ответить</a
+      >
         </div>
         <div class="comments__content-block">
           <img
@@ -163,7 +168,9 @@ $(document).ready(function(){
     </div>
     <div class="comments__content-nav">
       <div class="comments__content-answer">
-        <img src="img/score.svg" alt="Ответ" /> Ответить
+      <a href="#answer"
+      ><img src="img/score.svg" alt="Ответ" /> Ответить</a
+    >
       </div>
       <div class="comments__content-block">
         <img

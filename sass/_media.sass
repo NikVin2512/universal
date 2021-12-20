@@ -28,6 +28,8 @@
     &__sidebar
       max-width: 100%
   .content-blog
+    &__wrap
+      height: 100%
     &__item
       margin-right: 16px
       margin-bottom: 15px
@@ -38,13 +40,17 @@
         margin-right: 0
       &--three
         width: 230px
+        max-height: 100%
       &--four
         flex-basis: 64%
         margin-right: 0
+        height: 350px
     &__wrapper
       display: flex
       flex-direction: column
+      justify-content: center
     &__list
+      height: 100%
       &-item
         padding: 15px 15px 20px 15px
         margin: 0 15px 15px 0
@@ -87,6 +93,7 @@
     &__tag
       left: 20px
       padding: 3px 5px
+
   .comment-blog
     padding: 13px 20px 13px 20px
     &__avatar
@@ -97,7 +104,7 @@
       font-size: 12px
   .popular-chapter
     &--mt
-      margin-top: 125px
+      margin-top: 115px
   .user-blog
     &__date
       flex-basis: 100%
@@ -115,7 +122,10 @@
       margin-right: 19px
     &-item
       &__img
-        min-width: 270px
+        max-width: 270px
+        height: 100%
+      &__text
+        margin-bottom: 10px
     &-sidebar
       max-width: 223px
       &__img
@@ -146,6 +156,7 @@
         &-title
           font-size: 23px
           margin-bottom: 10px
+          margin-top: 0
         &-text
           margin-bottom: 15px
       &__block
@@ -493,6 +504,8 @@
       margin-right: 0
       &--three
         max-height: 20%
+      &--four
+        height: 600px
     &__wrapper
       display: block
     &__img
@@ -533,6 +546,8 @@
       flex-basis: 100%
       margin-right: 0
     &-item
+      &__img
+        min-width: 100%
       &__block
         max-width: 100%
     &-sidebar
