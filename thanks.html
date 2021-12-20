@@ -1,295 +1,487 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Best Tour Plan - Hotel Booking</title>
+    <title>Universal</title>
   </head>
-
   <body>
-    <header class="navbar">
+    <header class="header">
       <div class="container">
-        <div class="navbar-top">
-          <a href="#" class="horizontal-logo"
-            ><img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan"
-          /></a>
-          <form
-            action="#"
-            class="search navbar__search navbar__search--mobile--hidden"
-          >
-            <input
-              type="text"
-              class="search__input"
-              placeholder="Search Location"
-            />
-            <button class="search__button">
-              <img src="img/search.svg" alt="" class="search__img" />
-            </button>
-          </form>
-          <div class="user navbar__user navbar__user--mobile--hidden">
-            <img
-              src="img/avatar-nathan.jpg"
-              alt="avatar: Nathan"
-              class="user__avatar"
-            />
-            <span class="user__name">Nathan</span>
-          </div>
-          <button class="navbar-burger">
-            <span class="navbar-burger__line"></span>
-            <span class="navbar-burger__line"></span>
-            <span class="navbar-burger__line"></span>
-          </button>
-        </div>
-      </div>
-      <nav class="navbar-bottom navbar-bottom--hidden">
-        <div class="container">
-          <ul class="navbar-menu">
-            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
-              <div class="user navbar__user navbar__user--white-color">
-                <img
-                  src="img/avatar-nathan.jpg"
-                  alt="avatar: Nathan"
-                  class="user__avatar"
-                />
-                <span class="user__name">Nathan</span>
-              </div>
-            </li>
-            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
-              <form action="#" class="search navbar__search">
-                <input
-                  type="text"
-                  class="search__input"
-                  placeholder="Search Location"
-                />
-                <button class="search__button">
-                  <img src="img/search.svg" alt="" class="search__img" />
+        <div class="header__wrap">
+          <a class="logo" href="index.html">
+            <img src="img/logo-header.png" alt="Логотип: Universal" />
+          </a>
+          <nav class="navbar navbar--hidden">
+            <ul class="navbar__menu">
+              <li class="navbar__item">
+                <button
+                  data-toggle="modal"
+                  class="header__button header__button--mobile"
+                >
+                  ОСТАВИТЬ ЗАЯВКУ
                 </button>
-              </form>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">All Deals</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotels</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Activities</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Restaurants</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Events</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Rodrigues</a>
-            </li>
-          </ul>
+              </li>
+              <li class="navbar__item"><a href="#articles">Статьи</a></li>
+              <li class="navbar__item"><a href="#news">Новости</a></li>
+              <li class="navbar__item"><a href="#hot">Горячее</a></li>
+              <li class="navbar__item"><a href="#footer">HTML</a></li>
+              <li class="navbar__item"><a href="#footer">CSS</a></li>
+              <li class="navbar__item"><a href="#footer">JavaScript</a></li>
+              <li class="navbar__item"><a href="#footer">Web Design</a></li>
+            </ul>
+          </nav>
+          <button data-toggle="modal" class="header__button">
+            ОСТАВИТЬ ЗАЯВКУ
+          </button>
+          <div class="menu-burger">
+            <span class="menu-burger__line"></span
+            ><span class="menu-burger__line"></span
+            ><span class="menu-burger__line"></span>
+          </div>
         </div>
-      </nav>
-    </header>
-    <div class="bread-crumbs">
-      <div class="container">
-        <ul class="bread-crumbs-list">
-          <li class="bread-crumbs-list__item">
-            <a class="bread-crumbs-list__link" href="#">Home</a>
-          </li>
-          <li class="bread-crumbs-list__item">
-            <a class="bread-crumbs-list__link" href="#">Flash Offers</a>
-          </li>
-          <li class="bread-crumbs-list__item">
-            <a class="bread-crumbs-list__link" href="#">Grand Hilton Hotel</a>
-          </li>
-        </ul>
       </div>
-    </div>
-    <section class="hotel">
+    </header>
+    <section class="useful-articles">
       <div class="container">
-        <div class="hotel-top hotel__top">
-          <div class="hotel__info">
-            <div class="hotel__name">
-              <div class="hotel__block">
-                <h2 class="hotel__title">The message has been sent</h2>
+        <div class="useful-articles__wrap">
+          <div
+            id="css"
+            class="useful-articles__preview useful-articles__preview--active"
+          >
+            <img
+              src="img/useful-articles-bg.jpg"
+              alt="Задний фон"
+              class="useful-articles__img"
+            />
+            <div class="useful-articles__info">
+              <div class="useful-articles__user">
+                <a href="#"
+                  ><img
+                    src="img/avatar.png"
+                    alt="Аватар"
+                    class="useful-articles__avatar"
+                /></a>
+                <div class="useful-articles__block">
+                  <a href="#"
+                    ><span class="useful-articles__name">Давид Гуров</span></a
+                  >
+                  <span class="useful-articles__prof">Разработчик</span>
+                </div>
               </div>
-              <div class="hotel__subtitle">Expect a call soon!</div>
-              <a href="index.html">
-                <button class="hotel__back">Back to main</button></a
-              >
+              <div class="useful-articles__info-article info-article">
+                <span
+                  class="info-article__chapter info-article__chapter--color-css"
+                  >css</span
+                >
+                <h1 class="info-article__title">
+                  Расширение Chrome защищает от атак
+                </h1>
+                <button
+                  onclick="document.location='/article.html'"
+                  class="button info-article__button button--read"
+                >
+                  Читать далее
+                  <img src="img/arrow.svg" alt="Стрелка" />
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__wrapper">
-          <a href="index.html" class="footer__logo">
-            <img src="img/footer-logo.png" alt="logo: Best Tour Plan"
-          /></a>
-          <div class="footer__list footer__categories">
-            <h3 class="footer__title">ALL CATEGORIES</h3>
-            <ul class="footer__ul">
-              <li class="footer__item">
-                <a href="#" class="footer__link">All Deals </a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Hotels</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Activities</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Spa Packages </a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Hotel Day Packages </a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Restaurants</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Fitness</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Rodrigues</a>
-              </li>
-            </ul>
+          <div id="js" class="useful-articles__preview">
+            <img
+              src="img/news-img-1.png"
+              alt="Задний фон"
+              class="useful-articles__img"
+            />
+            <div class="useful-articles__info">
+              <div class="useful-articles__user">
+                <a href="#"
+                  ><img
+                    src="img/avatar.png"
+                    alt="Аватар"
+                    class="useful-articles__avatar"
+                /></a>
+                <div class="useful-articles__block">
+                  <a href="#"
+                    ><span class="useful-articles__name">Давид Гуров</span></a
+                  >
+                  <span class="useful-articles__prof">Разработчик</span>
+                </div>
+              </div>
+              <div class="useful-articles__info-article info-article">
+                <span
+                  class="
+                    info-article__chapter
+                    info-article__chapter--color-javascript
+                  "
+                  >Javascript</span
+                >
+                <h2 class="info-article__title">
+                  На каком стандарте писать скрипты, если я фрилансер
+                </h2>
+                <button
+                  onclick="document.location='/article.html'"
+                  class="button info-article__button button--read"
+                >
+                  Читать далее
+                  <img src="img/arrow.svg" alt="Стрелка" />
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="footer__list footer__additional">
-            <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
-            <ul class="footer__ul">
-              <li class="footer__item">
-                <a href="#" class="footer__link">About Us </a>
+          <div id="html" class="useful-articles__preview">
+            <img
+              src="img/news-img-2.png"
+              alt="Задний фон"
+              class="useful-articles__img"
+            />
+            <div class="useful-articles__info">
+              <div class="useful-articles__user">
+                <a href="#"
+                  ><img
+                    src="img/avatar.png"
+                    alt="Аватар"
+                    class="useful-articles__avatar"
+                /></a>
+                <div class="useful-articles__block">
+                  <a href="#"
+                    ><span class="useful-articles__name">Давид Гуров</span></a
+                  >
+                  <span class="useful-articles__prof">Разработчик</span>
+                </div>
+              </div>
+              <div class="useful-articles__info-article info-article">
+                <span
+                  class="
+                    info-article__chapter info-article__chapter--color-html
+                  "
+                  >HTML</span
+                >
+                <h2 class="info-article__title">
+                  Правильно вставляем картинку на сайт для Retina дисплея
+                </h2>
+                <button
+                  onclick="document.location='/article.html'"
+                  class="button info-article__button button--read"
+                >
+                  Читать далее
+                  <img src="img/arrow.svg" alt="Стрелка" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="web-design" class="useful-articles__preview">
+            <img
+              src="img/slider-img.jpg"
+              alt="Задний фон"
+              class="useful-articles__img"
+            />
+            <div class="useful-articles__info">
+              <div class="useful-articles__user">
+                <a href="#"
+                  ><img
+                    src="img/avatar.png"
+                    alt="Аватар"
+                    class="useful-articles__avatar"
+                /></a>
+                <div class="useful-articles__block">
+                  <a href="#"
+                    ><span class="useful-articles__name">Давид Гуров</span></a
+                  >
+                  <span class="useful-articles__prof">Разработчик</span>
+                </div>
+              </div>
+              <div class="useful-articles__info-article info-article">
+                <span
+                  class="
+                    info-article__chapter
+                    info-article__chapter--color-web-design
+                  "
+                  >Web-Design</span
+                >
+                <h2 class="info-article__title">ТОП-10 плагинов для Figma</h2>
+                <button
+                  onclick="document.location='/article.html'"
+                  class="button info-article__button button--read"
+                >
+                  Читать далее
+                  <img src="img/arrow.svg" alt="Стрелка" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="css-two" class="useful-articles__preview">
+            <img
+              src="img/news-img-4.png"
+              alt="Задний фон"
+              class="useful-articles__img"
+            />
+            <div class="useful-articles__info">
+              <div class="useful-articles__user">
+                <a href="#"
+                  ><img
+                    src="img/avatar.png"
+                    alt="Аватар"
+                    class="useful-articles__avatar"
+                /></a>
+                <div class="useful-articles__block">
+                  <a href="#"
+                    ><span class="useful-articles__name">Давид Гуров</span></a
+                  >
+                  <span class="useful-articles__prof">Разработчик</span>
+                </div>
+              </div>
+              <div class="useful-articles__info-article info-article">
+                <span
+                  class="info-article__chapter info-article__chapter--color-css"
+                  >Css</span
+                >
+                <h2 class="info-article__title">
+                  Возможности CSS Grid Layout , которые уже можно применять
+                </h2>
+                <button
+                  onclick="document.location='/article.html'"
+                  class="button info-article__button button--read"
+                >
+                  Читать далее
+                  <img src="img/arrow.svg" alt="Стрелка" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="useful-articles__tabs">
+            <h3 class="useful-articles__title">Рекомендуем</h3>
+            <ul class="useful-articles__list">
+              <li
+                data-target="#css"
+                class="useful-articles__item useful-articles__item--active"
+              >
+                <span
+                  class="
+                    useful-articles__chapter useful-articles__chapter--color-css
+                  "
+                  >css</span
+                >
+                <span class="useful-articles__text"
+                  >Как использовать CSS float после того, как вышел
+                  Flexbox</span
+                >
               </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Contact Us</a>
+              <li data-target="#js" class="useful-articles__item">
+                <span
+                  class="
+                    useful-articles__chapter
+                    useful-articles__chapter--color-javascript
+                  "
+                  >javascript</span
+                >
+                <span class="useful-articles__text"
+                  >На каком стандарте писать скрипты, если я фрилансер</span
+                >
               </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">How does it work?</a>
+              <li data-target="#html" class="useful-articles__item">
+                <span
+                  class="
+                    useful-articles__chapter
+                    useful-articles__chapter--color-html
+                  "
+                  >html</span
+                >
+                <span class="useful-articles__text"
+                  >Правильно вставляем картинку на сайт для Retina дисплея</span
+                >
               </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Frequently Asked Questions</a>
+              <li data-target="#web-design" class="useful-articles__item">
+                <span
+                  class="
+                    useful-articles__chapter
+                    useful-articles__chapter--color-web-design
+                  "
+                  >Web design</span
+                >
+                <span class="useful-articles__text"
+                  >ТОП-10 плагинов для Figma</span
+                >
               </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Deals.mu loyalty program </a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link"
-                  >Promote your Business on BTP</a
+              <li data-target="#css-two" class="useful-articles__item">
+                <span
+                  class="
+                    useful-articles__chapter useful-articles__chapter--color-css
+                  "
+                  >CSS</span
+                >
+                <span class="useful-articles__text"
+                  >Возможности CSS Grid Layout , которые уже можно
+                  применять</span
                 >
               </li>
             </ul>
           </div>
-          <div class="footer__list footer__legal">
-            <h3 class="footer__title">LEGAL INFORMATION</h3>
-            <ul class="footer__ul">
-              <li class="footer__item">
-                <a href="#" class="footer__link">Terms & Conditions </a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Disclaimer</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Cancellation policy</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Privacy</a>
+        </div>
+      </div>
+    </section>
+    <section class="thanks">
+      <div class="container">
+        <div class="thanks__wrap">
+          <h2 class="thanks__title">Ваш запрос отправлен!</h2>
+          <span class="thanks__subtitle"
+            >Спасибо что выбрали именно нас. В ближайшее время с Вами свяжется
+            специалист.</span
+          >
+          <button
+            onclick="document.location='index.html'"
+            class="button thanks__button"
+          >
+            Вернуться
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="container subscribe__wrap">
+        <h2 class="subscribe__title">Подпишитесь на нашу рассылку</h2>
+        <form class="subscribe__form" action="send.php" method="post">
+          <div class="invalid-subscribe">
+            <input
+              class="subscribe__input"
+              type="email"
+              placeholder="Email"
+              name="email"
+              required
+            />
+          </div>
+          <button class="button subscribe__button">Подписаться</button>
+        </form>
+      </div>
+    </section>
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <ul class="footer-top__list footer-top__list-news">
+            <li class="footer-top__item">Новости</li>
+            <li class="footer-top__item"><a href="#">Обновления</a></li>
+            <li class="footer-top__item"><a href="#">Экспресс</a></li>
+            <li class="footer-top__item"><a href="#">Politics</a></li>
+            <li class="footer-top__item"><a href="#">Solar Eclipse</a></li>
+          </ul>
+          <ul class="footer-top__list footer-top__list-article">
+            <li class="footer-top__item">Статьи</li>
+            <li class="footer-top__item"><a href="#">HTML</a></li>
+            <li class="footer-top__item"><a href="#">CSS</a></li>
+            <li class="footer-top__item"><a href="#">JavaScript</a></li>
+            <li class="footer-top__item"><a href="#">Web Design</a></li>
+          </ul>
+          <ul class="footer-top__list footer-top__list-video">
+            <li class="footer-top__item">Видеоуроки</li>
+            <li class="footer-top__item"><a href="#">Скринкасты</a></li>
+            <li class="footer-top__item"><a href="#">Уроки</a></li>
+            <li class="footer-top__item"><a href="#">Вебинары</a></li>
+          </ul>
+          <ul class="footer-top__list footer-top__list-courses">
+            <li class="footer-top__item">Курсы</li>
+            <li class="footer-top__item"><a href="#">Платные интенсивы</a></li>
+            <li class="footer-top__item"><a href="#">Бесплатные стримы</a></li>
+            <li class="footer-top__item"><a href="#">Мастер-классы</a></li>
+            <li class="footer-top__item"><a href="#">Менторство</a></li>
+            <li class="footer-top__item"><a href="#">Буткемпы</a></li>
+          </ul>
+          <ul class="footer-top__list footer-top__list-info">
+            <li class="footer-top__item">Информация</li>
+            <li class="footer-top__item"><a href="#">Политика данных</a></li>
+            <li class="footer-top__item"><a href="#">Оферта сайта</a></li>
+            <li class="footer-top__item"><a href="#">Реквизиты</a></li>
+            <li class="footer-top__item"><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="footer-top__list footer-top__list-categories">
+            <li class="footer-top__item">Категории</li>
+            <li class="footer-top__item"><a href="#">Популярное</a></li>
+            <li class="footer-top__item"><a href="#">Горячее</a></li>
+            <li class="footer-top__item"><a href="#">Подборки</a></li>
+            <li class="footer-top__item"><a href="#">Мнения</a></li>
+            <li class="footer-top__item"><a href="#">Карьера</a></li>
+          </ul>
+        </div>
+        <div class="footer-middle">
+          <div class="footer-middle__block">
+            <a href="index.html" class="footer-middle__link"
+              ><img
+                class="footer__logo"
+                src="img/logo-footer.png"
+                alt="логотип"
+            /></a>
+            <ul class="footer-middle__list">
+              <li class="footer-middle__item"><a href="#">Контакты</a></li>
+              <li class="footer-middle__item"><a href="#">Работа у нас</a></li>
+              <li class="footer-middle__item"><a href="#">Реклама</a></li>
+              <li class="footer-middle__item">
+                <a href="#">Обратная связь</a>
               </li>
             </ul>
           </div>
-          <div class="footer__social">
-            <h3 class="footer__title footer__title--mb-2">Social Network</h3>
-            <div class="footer__block-icon">
-              <a target="_blank" href="https://facebook.com"
-                ><img src="img/facebook.svg" alt="icon: facebook"
-              /></a>
-              <a target="_blank" href="https://youtube.com"
-                ><img src="img/youtube.svg" alt="icon: youtube"
-              /></a>
-              <a target="_blank" href="https://instagram.com"
-                ><img src="img/instagram.svg" alt="icon: instagram"
-              /></a>
-            </div>
-          </div>
-          <div class="footer__contact-details">
-            <h3 class="footer__title footer__title--mb-4">Contact Details</h3>
-            <span class="footer__subtitle"
-              >Feel free to contact us by phone, email or by our contact
-              form</span
-            >
-            <span class="footer__map"
-              >9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
-              States</span
-            >
-            <span class="footer__phone-call"
-              >Tel (business hours) : <a href="tel:2691500">269 1500</a>
-              <br />Tel (hotline) Monday - Saturday:
-              <a href="tel:52566138">52-56-61-38</a> (08:00 am – 20:00 pm)<br />
-              Tel (hotline) Sunday:
-              <a href="tel:52566138">52-56-61-38</a> (08:00 am – 14:00 pm)
-            </span>
-            <a href="mailto:cherly.lawson@example.com" class="footer__email"
-              >cherly.lawson@example.com</a
-            >
-          </div>
-          <div class="footer__send-form">
-            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form class="footer__form form" action="send.php" method="post">
-              <div class="footer__input-group">
-                <input
-                  type="text"
-                  class="input footer__input"
-                  placeholder="Your Full Name*"
-                  name="name"
-                  required
-                  minlength="2"
-                />
-              </div>
-              <div class="footer__input-group">
-                <input
-                  type="tel"
-                  class="input footer__input phone-us"
-                  placeholder="Phone Number*"
-                  name="phone"
-                  required
-                />
-              </div>
-              <textarea
-                class="footer__message message"
-                placeholder="Message"
-                name="message"
-              ></textarea>
-
-              <button class="button footer__button" type="submit">Send</button>
-              <span class="footer__required">* Required Fields</span>
-            </form>
+          <div class="footer-middle__social">
+            <a
+              target="_blank"
+              href="https://facebook.com"
+              class="
+                footer-middle__social-link footer-middle__social-link--facebook
+              "
+              ><img
+                src="img/facebook.svg"
+                alt="Facebook"
+                class="footer-middle__social-icon" /></a
+            ><a
+              target="_blank"
+              href="https://twitter.com"
+              class="
+                footer-middle__social-link footer-middle__social-link--twitter
+              "
+              ><img
+                src="img/twitter.svg"
+                alt="Twitter"
+                class="footer-middle__social-icon" /></a
+            ><a
+              target="_blank"
+              href="https://youtube.com"
+              class="
+                footer-middle__social-link footer-middle__social-link--youtube
+              "
+              ><img
+                src="img/youtube.svg"
+                alt="Youtube"
+                class="footer-middle__social-icon" /></a
+            ><a
+              target="_blank"
+              href="https://instagram.com"
+              class="
+                footer-middle__social-link footer-middle__social-link--instagram
+              "
+              ><img
+                src="img/instagram.png"
+                alt="Instagram"
+                class="footer-middle__social-icon"
+            /></a>
           </div>
         </div>
-        <div class="footer__infomation footer-info">
-          <div class="footer-info__block">
-            <a href="#" class="footer-info__link">Disclaimer</a
-            ><a href="#" class="footer-info__link">Conditions of use</a
-            ><a href="#" class="footer-info__link">Cancellation policy</a>
-          </div>
-          <img
-            class="footer-info__payments"
-            src="img/payments.png"
-            alt="icon: payments"
-          />
+        <div class="footer-bottom">
+          <p class="footer-bottom__text">
+            Universal — это онлайн издание, в котором мы публикуем полезные
+            материалы о веб разработке: статьи, новости, видеоуроки, подборки,
+            ссылки и курсы. Материалы на сайте бесплатны, но при копировании,
+            указывайте ссылку.
+          </p>
+          <span class="footer-bottom__copyright"
+            >© 2020 Universal Magazine</span
+          >
         </div>
       </div>
     </footer>
@@ -301,12 +493,12 @@
           class="modal__close"
           alt="icon: modal close"
       /></a>
-      <h3 class="modal__title">Booking</h3>
+      <h3 class="modal__title">Запрос</h3>
       <form class="modal__form form" action="send.php" method="post">
         <input
           type="text"
           class="input modal__input"
-          placeholder="Your Full Name*"
+          placeholder="Ваше имя*"
           name="name"
           required
           minlength="2"
@@ -314,7 +506,7 @@
         <input
           type="tel"
           class="input modal__input phone-us"
-          placeholder="Phone Number*"
+          placeholder="Номер телефона*"
           name="phone"
           required
         />
@@ -327,19 +519,18 @@
         />
         <textarea
           class="message modal__message"
-          placeholder="Message"
+          placeholder="Сообщение"
           name="message"
         ></textarea>
 
-        <button class="button modal__button" type="submit">Send</button>
-        <span class="modal__required">* Required Fields</span>
+        <button class="button modal__button" type="submit">Отправить</button>
+        <span class="modal__required">* Обазтельные поля</span>
       </form>
     </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
-    <script src="js/aos.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
   </body>
