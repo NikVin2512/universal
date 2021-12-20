@@ -7,7 +7,7 @@
     justify-content: space-between
   &-slider
     width: 555px
-    // position: relative
+    position: relative
     &__slide
       width: 555px
       height: 570px
@@ -23,6 +23,15 @@
         height: 100%
         background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
         z-index: 1
+    // &__pagination
+    //   display: flex
+    //   align-items: center
+    //   justify-content: space-between
+    //   position: absolute
+    //   left: 0
+    //   bottom: 40px
+    //   background-color: $white
+    //   z-index: 2
     &__img
       width: 555px
       height: 570px
@@ -113,13 +122,14 @@
         color: #4B5157
         max-width: 213px
         margin-bottom: 45px
-    &__chapter
+    &__chapter-tag
       font-weight: 700
       font-size: 12px
       line-height: 15px
       color: #6E99AE
       letter-spacing: 0.5px
       margin-bottom: 20px
+      text-transform: uppercase
     &__block
       position: absolute
       top: 35px
@@ -145,3 +155,12 @@
       flex-direction: column
       justify-content: space-between
       min-height: 100%
+.swiper-pagination-bullet
+  background-color: $white
+  margin-right: 11px !important
+  &:last-child
+    margin-right: 0 !important
+.swiper-pagination-bullet-active
+  background-color: $white
+.swiper-pagination
+  margin-bottom: 40px

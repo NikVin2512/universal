@@ -19,11 +19,9 @@
     <header class="header">
       <div class="container">
         <div class="header__wrap">
-          <img
-            src="img/logo-header.png"
-            alt="Логотип: Universal"
-            class="logo"
-          />
+          <a class="logo" href="index.html">
+            <img src="img/logo-header.png" alt="Логотип: Universal" />
+          </a>
           <nav class="navbar navbar--hidden">
             <ul class="navbar__menu">
               <li class="navbar__item">
@@ -31,13 +29,13 @@
                   ОСТАВИТЬ ЗАЯВКУ
                 </button>
               </li>
-              <li class="navbar__item"><a href="#">Статьи</a></li>
-              <li class="navbar__item"><a href="#">Новости</a></li>
-              <li class="navbar__item"><a href="#">Горячее</a></li>
-              <li class="navbar__item"><a href="#">HTML</a></li>
-              <li class="navbar__item"><a href="#">CSS</a></li>
-              <li class="navbar__item"><a href="#">JavaScript</a></li>
-              <li class="navbar__item"><a href="#">Web Design</a></li>
+              <li class="navbar__item"><a href="#articles">Статьи</a></li>
+              <li class="navbar__item"><a href="#news">Новости</a></li>
+              <li class="navbar__item"><a href="#hot">Горячее</a></li>
+              <li class="navbar__item"><a href="#footer">HTML</a></li>
+              <li class="navbar__item"><a href="#footer">CSS</a></li>
+              <li class="navbar__item"><a href="#footer">JavaScript</a></li>
+              <li class="navbar__item"><a href="#footer">Web Design</a></li>
             </ul>
           </nav>
           <button class="header__button">ОСТАВИТЬ ЗАЯВКУ</button>
@@ -74,20 +72,24 @@
                 </div>
               </div>
               <div class="useful-articles__info-article info-article">
-                <span class="info-article__chapter">Javascript</span>
+                <span
+                  class="info-article__chapter info-article__chapter--color-css"
+                  >css</span
+                >
                 <h2 class="info-article__title">
                   Расширение Chrome защищает от атак
                 </h2>
-                <button class="button info-article__button button--read">
-                  Читать далее
-                  <img src="img/arrow.svg" alt="Стрелка" />
-                </button>
+                <a href="article.html"
+                  ><button class="button info-article__button button--read">
+                    Читать далее
+                    <img src="img/arrow.svg" alt="Стрелка" /></button
+                ></a>
               </div>
             </div>
           </div>
           <div id="js" class="useful-articles__preview">
             <img
-              src="img/useful-articles-bg.jpg"
+              src="img/news-img-1.png"
               alt="Задний фон"
               class="useful-articles__img"
             />
@@ -104,20 +106,27 @@
                 </div>
               </div>
               <div class="useful-articles__info-article info-article">
-                <span class="info-article__chapter">Javascript</span>
+                <span
+                  class="
+                    info-article__chapter
+                    info-article__chapter--color-javascript
+                  "
+                  >Javascript</span
+                >
                 <h2 class="info-article__title">
-                  Расширение Chrome защищает от атак
+                  На каком стандарте писать скрипты, если я фрилансер
                 </h2>
-                <button class="button info-article__button button--read">
-                  Читать далее
-                  <img src="img/arrow.svg" alt="Стрелка" />
-                </button>
+                <a href="article.html"
+                  ><button class="button info-article__button button--read">
+                    Читать далее
+                    <img src="img/arrow.svg" alt="Стрелка" /></button
+                ></a>
               </div>
             </div>
           </div>
           <div id="html" class="useful-articles__preview">
             <img
-              src="img/useful-articles-bg.jpg"
+              src="img/news-img-2.png"
               alt="Задний фон"
               class="useful-articles__img"
             />
@@ -134,20 +143,26 @@
                 </div>
               </div>
               <div class="useful-articles__info-article info-article">
-                <span class="info-article__chapter">Javascript</span>
+                <span
+                  class="
+                    info-article__chapter info-article__chapter--color-html
+                  "
+                  >HTML</span
+                >
                 <h2 class="info-article__title">
-                  Расширение Chrome защищает от атак
+                  Правильно вставляем картинку на сайт для Retina дисплея
                 </h2>
-                <button class="button info-article__button button--read">
-                  Читать далее
-                  <img src="img/arrow.svg" alt="Стрелка" />
-                </button>
+                <a href="article.html"
+                  ><button class="button info-article__button button--read">
+                    Читать далее
+                    <img src="img/arrow.svg" alt="Стрелка" /></button
+                ></a>
               </div>
             </div>
           </div>
           <div id="web-design" class="useful-articles__preview">
             <img
-              src="img/useful-articles-bg.jpg"
+              src="img/slider-img.jpg"
               alt="Задний фон"
               class="useful-articles__img"
             />
@@ -164,20 +179,25 @@
                 </div>
               </div>
               <div class="useful-articles__info-article info-article">
-                <span class="info-article__chapter">Javascript</span>
-                <h2 class="info-article__title">
-                  Расширение Chrome защищает от атак
-                </h2>
-                <button class="button info-article__button button--read">
-                  Читать далее
-                  <img src="img/arrow.svg" alt="Стрелка" />
-                </button>
+                <span
+                  class="
+                    info-article__chapter
+                    info-article__chapter--color-web-design
+                  "
+                  >Web-Design</span
+                >
+                <h2 class="info-article__title">ТОП-10 плагинов для Figma</h2>
+                <a href="article.html"
+                  ><button class="button info-article__button button--read">
+                    Читать далее
+                    <img src="img/arrow.svg" alt="Стрелка" /></button
+                ></a>
               </div>
             </div>
           </div>
           <div id="css-two" class="useful-articles__preview">
             <img
-              src="img/useful-articles-bg.jpg"
+              src="img/news-img-4.png"
               alt="Задний фон"
               class="useful-articles__img"
             />
@@ -194,14 +214,18 @@
                 </div>
               </div>
               <div class="useful-articles__info-article info-article">
-                <span class="info-article__chapter">Javascript</span>
+                <span
+                  class="info-article__chapter info-article__chapter--color-css"
+                  >Css</span
+                >
                 <h2 class="info-article__title">
-                  Расширение Chrome защищает от атак
+                  Возможности CSS Grid Layout , которые уже можно применять
                 </h2>
-                <button class="button info-article__button button--read">
-                  Читать далее
-                  <img src="img/arrow.svg" alt="Стрелка" />
-                </button>
+                <a href="article.html"
+                  ><button class="button info-article__button button--read">
+                    Читать далее
+                    <img src="img/arrow.svg" alt="Стрелка" /></button
+                ></a>
               </div>
             </div>
           </div>
@@ -281,28 +305,37 @@
         <div class="life-hack__wrap">
           <ul class="life-hack__list">
             <li class="life-hack__item">
-              <span class="life-hack__text">25 способов настроить слайдер </span
-              ><img src="img/1.png" alt="Изображение" class="life-hack__img" />
+              <a class="life-hack__item-link" href="#"
+                ><span class="life-hack__text"
+                  >25 способов настроить слайдер </span
+                ><img src="img/1.png" alt="Изображение" class="life-hack__img"
+              /></a>
             </li>
             <li class="life-hack__item">
-              <span class="life-hack__text">Главные фишки фрилансера</span
-              ><img src="img/2.png" alt="Изображение" class="life-hack__img" />
+              <a class="life-hack__item-link" href="#"
+                ><span class="life-hack__text">Главные фишки фрилансера</span
+                ><img src="img/2.png" alt="Изображение" class="life-hack__img"
+              /></a>
             </li>
             <li class="life-hack__item">
-              <span class="life-hack__text"
-                >Техника управлеия временем “Помодоро”</span
-              ><img src="img/3.png" alt="Изображение" class="life-hack__img" />
+              <a class="life-hack__item-link" href="#"
+                ><span class="life-hack__text"
+                  >Техника управлеия временем “Помодоро”</span
+                ><img src="img/3.png" alt="Изображение" class="life-hack__img"
+              /></a>
             </li>
             <li class="life-hack__item">
-              <span class="life-hack__text"
-                >Что нужно знать о Git и GitHub </span
-              ><img src="img/4.png" alt="Изображение" class="life-hack__img" />
+              <a class="life-hack__item-link" href="#"
+                ><span class="life-hack__text"
+                  >Что нужно знать о Git и GitHub </span
+                ><img src="img/4.png" alt="Изображение" class="life-hack__img"
+              /></a>
             </li>
           </ul>
         </div>
       </div>
     </section>
-    <section class="blog-article">
+    <section id="articles" class="blog-article">
       <div class="container">
         <div class="blog-article__wrap">
           <div class="blog-article__content content-blog">
@@ -456,7 +489,7 @@
                 <span class="sidebar-blog__size">PDF, 125 Мб</span>
               </div>
               <div class="sidebar-blog__download">
-                <a href="#" class="sidebar-blog__link"
+                <a href="article.html" download class="sidebar-blog__link"
                   ><img src="img/download.svg" alt="Скачать" />Скачать</a
                 >
               </div>
@@ -482,17 +515,26 @@
             <div class="sidebar-blog__item sidebar-blog__item--three">
               <h4 class="sidebar-blog__social-title">Наши соцсети</h4>
               <div class="sidebar-blog__social">
-                <a href="#" class="sidebar-blog__social-link"
+                <a
+                  target="_blank"
+                  href="https://facebook.com"
+                  class="sidebar-blog__social-link"
                   ><img
                     src="img/facebook.svg"
                     alt="facebook"
                     class="sidebar-blog__img-social" /></a
-                ><a href="#" class="sidebar-blog__social-link"
+                ><a
+                  target="_blank"
+                  href="https://twitter.com"
+                  class="sidebar-blog__social-link"
                   ><img
                     src="img/twitter.svg"
                     alt="twitter"
                     class="sidebar-blog__img-social" /></a
-                ><a href="#" class="sidebar-blog__social-link"
+                ><a
+                  target="_blank"
+                  href="https://youtube.com"
+                  class="sidebar-blog__social-link"
                   ><img
                     src="img/youtube.svg"
                     alt="youtube"
@@ -509,12 +551,13 @@
         <h2 class="random__title">
           Расследование недели: сколько зарабатывает веб разработчик в Москве
         </h2>
-        <button class="button button--read random__button">
-          Читать статью <img src="img/arrow.svg" alt="Стрелка" />
-        </button>
+        <a href="article.html"
+          ><button class="button button--read random__button">
+            Читать статью <img src="img/arrow.svg" alt="Стрелка" /></button
+        ></a>
       </div>
     </section>
-    <section class="news">
+    <section id="news" class="news">
       <div class="container">
         <div class="news__wrap">
           <div class="news__content">
@@ -526,7 +569,8 @@
                     <div class="news-item__chapter news-item__chapter--news">
                       Новости
                     </div>
-                    <img src="img/favorite.svg" class="news-item__favorite" />
+                    <!-- <img src="img/favorite.svg" class="news-item__favorite" /> -->
+                    <div class="news-item__favorite"></div>
                     <h3 class="news-item__title">
                       Новый налоговый режим для фрилансеров — налог на проф.
                       доход
@@ -561,7 +605,7 @@
                     <div class="news-item__chapter news-item__chapter--opinion">
                       Мнения
                     </div>
-                    <img src="img/favorite.svg" class="news-item__favorite" />
+                    <div class="news-item__favorite"></div>
                     <h3 class="news-item__title">
                       Платные курсы — это не быстрый способ выйти на нужный
                       уровень
@@ -595,7 +639,7 @@
                     <div class="news-item__chapter news-item__chapter--hot">
                       Горячее
                     </div>
-                    <img src="img/favorite.svg" class="news-item__favorite" />
+                    <div class="news-item__favorite"></div>
                     <h3 class="news-item__title">
                       Из-за ограничений стали недоступны серверы Telegram. К
                       чему это может...
@@ -629,7 +673,7 @@
                     <div class="news-item__chapter news-item__chapter--opinion">
                       Мнения
                     </div>
-                    <img src="img/favorite.svg" class="news-item__favorite" />
+                    <div class="news-item__favorite"></div>
                     <h3 class="news-item__title">
                       В вашем портфолио могут быть фейковые проекты, если вы
                       сделали...
@@ -664,7 +708,7 @@
                     <div class="news-item__chapter news-item__chapter--hot">
                       Горячее
                     </div>
-                    <img src="img/favorite.svg" class="news-item__favorite" />
+                    <div class="news-item__favorite"></div>
                     <h3 class="news-item__title">
                       Список стран, куда можно улететь
                     </h3>
@@ -700,7 +744,7 @@
                     >
                       Подборки
                     </div>
-                    <img src="img/favorite.svg" class="news-item__favorite" />
+                    <div class="news-item__favorite"></div>
                     <h3 class="news-item__title">
                       Список Youtube каналов для тех, кто только начинает
                       изучать разработку
@@ -831,7 +875,7 @@
         </div>
       </div>
     </section>
-    <section class="info">
+    <section id="hot" class="info">
       <div class="container">
         <div class="info__wrap">
           <div class="info-slider">
@@ -901,7 +945,104 @@
                     </div>
                   </div>
                 </div>
+                <div class="swiper-slide info-slider__slide">
+                  <span class="info-slider__tag">Горячее</span>
+                  <img
+                    src="img/slider-img.jpg"
+                    alt="Картинка"
+                    class="info-slider__img"
+                  />
+                  <div class="info-slider__content">
+                    <div class="info-slider__user">
+                      <img
+                        src="img/info-avatar.png"
+                        class="info-slider__avatar"
+                      />
+                      <div class="info-slider__name">Оксана Пушкина</div>
+                      <div class="info-slider__prof">Фотограф</div>
+                    </div>
+                    <div class="info-slider__block">
+                      <h2 class="info-slider__title">
+                        Выбор читателей: где удобнее работать фрилансеру
+                      </h2>
+                      <button class="button info-slider__button">
+                        <img
+                          src="img/picture.png"
+                          alt="иконка: фотографии"
+                          class="info-slider__picture"
+                        />Смотреть фото<span class="info-slider__score"
+                          >26</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide info-slider__slide">
+                  <span class="info-slider__tag">Горячее</span>
+                  <img
+                    src="img/slider-img.jpg"
+                    alt="Картинка"
+                    class="info-slider__img"
+                  />
+                  <div class="info-slider__content">
+                    <div class="info-slider__user">
+                      <img
+                        src="img/info-avatar.png"
+                        class="info-slider__avatar"
+                      />
+                      <div class="info-slider__name">Оксана Пушкина</div>
+                      <div class="info-slider__prof">Фотограф</div>
+                    </div>
+                    <div class="info-slider__block">
+                      <h2 class="info-slider__title">
+                        Выбор читателей: где удобнее работать фрилансеру
+                      </h2>
+                      <button class="button info-slider__button">
+                        <img
+                          src="img/picture.png"
+                          alt="иконка: фотографии"
+                          class="info-slider__picture"
+                        />Смотреть фото<span class="info-slider__score"
+                          >26</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide info-slider__slide">
+                  <span class="info-slider__tag">Горячее</span>
+                  <img
+                    src="img/slider-img.jpg"
+                    alt="Картинка"
+                    class="info-slider__img"
+                  />
+                  <div class="info-slider__content">
+                    <div class="info-slider__user">
+                      <img
+                        src="img/info-avatar.png"
+                        class="info-slider__avatar"
+                      />
+                      <div class="info-slider__name">Оксана Пушкина</div>
+                      <div class="info-slider__prof">Фотограф</div>
+                    </div>
+                    <div class="info-slider__block">
+                      <h2 class="info-slider__title">
+                        Выбор читателей: где удобнее работать фрилансеру
+                      </h2>
+                      <button class="button info-slider__button">
+                        <img
+                          src="img/picture.png"
+                          alt="иконка: фотографии"
+                          class="info-slider__picture"
+                        />Смотреть фото<span class="info-slider__score"
+                          >26</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div class="swiper-pagination info-slider__pagination"></div>
             </div>
           </div>
           <div class="info__article info-article">
@@ -912,7 +1053,7 @@
                 alt="Человек"
               />
               <div class="info-article__block">
-                <span class="info-article__chapter">Карьера</span>
+                <span class="info-article__chapter-tag">Карьера</span>
                 <div class="info-article__main-title">
                   Вопросы на собеседовании для джуна
                 </div>
@@ -920,9 +1061,11 @@
                   Каверзные и не очень вопросы, которых боятся новички, когда
                   идут на собеседование
                 </div>
-                <button class="button button--read info-article__button">
-                  Читать далее <img src="img/arrow.svg" alt="стрелка" />
-                </button>
+                <a href="article.html"
+                  ><button class="button button--read info-article__button">
+                    Читать далее
+                    <img src="img/arrow.svg" alt="стрелка" /></button
+                ></a>
               </div>
             </div>
             <div class="info-article__secondary">
@@ -964,13 +1107,21 @@
     <section class="subscribe">
       <div class="container subscribe__wrap">
         <h2 class="subscribe__title">Подпишитесь на нашу рассылку</h2>
-        <form class="subscribe__form" action="#" method="post">
-          <input class="subscribe__input" type="email" placeholder="Email" />
+        <form class="subscribe__form" action="" method="post">
+          <div class="invalid-subscribe">
+            <input
+              class="subscribe__input"
+              type="email"
+              placeholder="Email"
+              name="email"
+              required
+            />
+          </div>
           <button class="button subscribe__button">Подписаться</button>
         </form>
       </div>
     </section>
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="container">
         <div class="footer-top">
           <ul class="footer-top__list footer-top__list-news">
@@ -1036,7 +1187,8 @@
           </div>
           <div class="footer-middle__social">
             <a
-              href="#"
+              target="_blank"
+              href="https://facebook.com"
               class="
                 footer-middle__social-link footer-middle__social-link--facebook
               "
@@ -1045,7 +1197,8 @@
                 alt="Facebook"
                 class="footer-middle__social-icon" /></a
             ><a
-              href="#"
+              target="_blank"
+              href="https://twitter.com"
               class="
                 footer-middle__social-link footer-middle__social-link--twitter
               "
@@ -1054,7 +1207,8 @@
                 alt="Twitter"
                 class="footer-middle__social-icon" /></a
             ><a
-              href="#"
+              target="_blank"
+              href="https://youtube.com"
               class="
                 footer-middle__social-link footer-middle__social-link--youtube
               "
@@ -1063,7 +1217,8 @@
                 alt="Youtube"
                 class="footer-middle__social-icon" /></a
             ><a
-              href="#"
+              target="_blank"
+              href="https://instagram.com"
               class="
                 footer-middle__social-link footer-middle__social-link--instagram
               "
@@ -1089,6 +1244,8 @@
     </footer>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
   </body>

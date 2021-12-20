@@ -61,9 +61,13 @@
         </div>
       </div>
     </header>
-    <section class="slider-head">
+    <section class="slider-head slider-head--next">
       <div class="container-article">
-        <div class="slider-head__bookmark"></div>
+        <img
+          class="slider-head__bookmark"
+          src="img/bookmark.png"
+          alt="Закладка"
+        />
         <div class="slider-head__swiper">
           <div class="swiper">
             <div class="swiper-wrapper">
@@ -454,7 +458,7 @@
               Добавить комментарий
             </button>
           </div>
-          <div id="comments" class="comments__middle">
+          <div class="comments__middle">
             <div class="comments__middle-item">
               <img
                 src="img/article-slider-avatar.png"
@@ -632,7 +636,7 @@
               </div>
             </div>
           </div>
-          <button id="more" class="comments__button-more">
+          <button class="comments__button-more">
             <img src="img/load.png" alt="Загрузить" />Загрузить еще
           </button>
           <div class="comments__form-block">
@@ -641,27 +645,18 @@
               alt="Аватар"
               class="comments__form-avatar"
             />
-            <form class="comments-form" action="send.php" method="post">
+            <form class="comments-form" action="#">
               <h3 class="comments__form-title">Что вы думаете на этот счет?</h3>
               <div class="comments__form-wrap">
                 <textarea
-                  class="comments__form-textarea invalid-comments"
-                  name="message"
+                  class="comments__form-textarea"
+                  name="#"
                   id="#"
                   cols="30"
                   rows="10"
-                  minlength="100"
                 ></textarea>
               </div>
-              <button
-                type="submit"
-                class="
-                  button
-                  comments__form-button
-                  button--read
-                  invalid-comments
-                "
-              >
+              <button class="button button--read">
                 Отправить<img src="img/arrow.svg" alt="Стрелка" />
               </button>
             </form>
@@ -672,16 +667,8 @@
     <section class="subscribe">
       <div class="container subscribe__wrap">
         <h2 class="subscribe__title">Подпишитесь на нашу рассылку</h2>
-        <form class="subscribe__form" action="send.php" method="post">
-          <div class="invalid-subscribe">
-            <input
-              class="subscribe__input"
-              type="email"
-              placeholder="Email"
-              name="email"
-              required
-            />
-          </div>
+        <form class="subscribe__form" action="#" method="post">
+          <input class="subscribe__input" type="email" placeholder="Email" />
           <button class="button subscribe__button">Подписаться</button>
         </form>
       </div>
@@ -809,8 +796,6 @@
     </footer>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
   </body>

@@ -23,6 +23,8 @@ ul li
 img
   vertical-align: top
   object-fit: cover
+input, textarea, button, a
+  outline: none
 // Стили body
 body
   color: #000
@@ -32,7 +34,7 @@ body
   line-height: 20px
   hyphens: auto
   position: relative
-  // background: #E5E5E5
+  background: #E5E5E5
   &::after
     content: ''
     position: absolute
@@ -40,8 +42,8 @@ body
     left: 0
     z-index: -1
     width: 100%
-    height: 575px
-    // background-color: #262D33
+    height: 615px
+    background-color: #262D33
 
 .container
   max-width: 1140px
@@ -58,6 +60,8 @@ body
   align-items: center
   padding: 10px 20px
   color: $white
+  &:hover
+    background: darken(#4592FF, 5)
   &--read
     img
       margin-left: 8px
@@ -98,3 +102,14 @@ body
   color: #939699
   img
     margin-right: 5px
+.invalid
+  color: red
+  &-subscribe
+    display: flex
+    flex-direction: column
+    align-items: start
+  &-comments
+    margin-bottom: -5px
+#-error
+  margin: 0
+  padding: 0
