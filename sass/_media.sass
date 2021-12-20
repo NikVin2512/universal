@@ -179,6 +179,13 @@
   .previews
     &__img
       max-width: 223px
+@media (min-width: 992px)
+  button
+    &:hover
+      filter: brightness(0.9)
+  a
+    &:hover
+      text-decoration: underline
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -361,6 +368,9 @@
     &__form
       &-wrap
         width: 100%
+  .modal
+    max-height: 95%
+    overflow-y: scroll
 @media (max-width: 767px)
   .container
     width: 95%
@@ -412,12 +422,13 @@
       z-index: 10
       &--article
         background-color: $white
-
     &__item
       margin-bottom: 20px
       margin-right: 0
       &:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8)
         display: flex
+      &:first-child
+        display: block
   .menu-burger
     display: flex
     position: relative
@@ -774,6 +785,24 @@
       &-text
         font-size: 14px
         line-height: 20px
+  .modal
+    padding: 10px 15px
+    width: 90%
+    max-height: 95%
+    top: 10px
+    left: 50%
+    transform: translateX(-50%)
+    overflow-y: scroll
+    &__input
+      height: 40px
+    &__button
+      order: 2
+      padding: 15px 45px
+    &__required
+      display: block
+      margin-top: 10px
+    &__message
+      height: 80px
 @media (max-width: 487px)
   .useful-articles
     &__info

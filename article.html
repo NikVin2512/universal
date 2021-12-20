@@ -25,7 +25,10 @@
           <nav class="navbar navbar--hidden">
             <ul class="navbar__menu navbar__menu--article">
               <li class="navbar__item">
-                <button class="header__button header__button--mobile">
+                <button
+                  data-toggle="modal"
+                  class="header__button header__button--mobile"
+                >
                   ОСТАВИТЬ ЗАЯВКУ
                 </button>
               </li>
@@ -52,7 +55,9 @@
               </li>
             </ul>
           </nav>
-          <button class="header__button">ОСТАВИТЬ ЗАЯВКУ</button>
+          <button data-toggle="modal" class="header__button">
+            ОСТАВИТЬ ЗАЯВКУ
+          </button>
           <div class="menu-burger">
             <span class="menu-burger__line menu-burger__line-article"></span
             ><span class="menu-burger__line menu-burger__line-article"></span
@@ -868,10 +873,53 @@
         </div>
       </div>
     </footer>
+    <div class="modal-bg"></div>
+    <div class="modal">
+      <a href="#"
+        ><img
+          src="img/modal-close.svg"
+          class="modal__close"
+          alt="icon: modal close"
+      /></a>
+      <h3 class="modal__title">Запрос</h3>
+      <form class="modal__form form" action="send.php" method="post">
+        <input
+          type="text"
+          class="input modal__input"
+          placeholder="Ваше имя*"
+          name="name"
+          required
+          minlength="2"
+        />
+        <input
+          type="tel"
+          class="input modal__input phone-us"
+          placeholder="Номер телефона*"
+          name="phone"
+          required
+        />
+        <input
+          type="email"
+          class="input modal__input"
+          placeholder="Email*"
+          name="email"
+          required
+        />
+        <textarea
+          class="message modal__message"
+          placeholder="Сообщение"
+          name="message"
+        ></textarea>
+
+        <button class="button modal__button" type="submit">Отправить</button>
+        <span class="modal__required">* Обазтельные поля</span>
+      </form>
+    </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/more.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
   </body>

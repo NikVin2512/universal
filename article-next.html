@@ -25,7 +25,10 @@
           <nav class="navbar navbar--hidden">
             <ul class="navbar__menu navbar__menu--article">
               <li class="navbar__item">
-                <button class="header__button header__button--mobile">
+                <button
+                  data-toggle="modal"
+                  class="header__button header__button--mobile"
+                >
                   ОСТАВИТЬ ЗАЯВКУ
                 </button>
               </li>
@@ -52,7 +55,9 @@
               </li>
             </ul>
           </nav>
-          <button class="header__button">ОСТАВИТЬ ЗАЯВКУ</button>
+          <button data-toggle="modal" class="header__button">
+            ОСТАВИТЬ ЗАЯВКУ
+          </button>
           <div class="menu-burger">
             <span class="menu-burger__line menu-burger__line-article"></span
             ><span class="menu-burger__line menu-burger__line-article"></span
@@ -63,11 +68,7 @@
     </header>
     <section class="slider-head slider-head--next">
       <div class="container-article">
-        <img
-          class="slider-head__bookmark"
-          src="img/bookmark.png"
-          alt="Закладка"
-        />
+        <div class="slider-head__bookmark"></div>
         <div class="slider-head__swiper">
           <div class="swiper">
             <div class="swiper-wrapper">
@@ -83,20 +84,18 @@
                       />
                       <span>На главную</span>
                     </a>
-                    <a href="article.html"
-                      ><button
-                        class="slider-head__button slider-head__button--prev"
-                      >
-                        <img src="img/arrow-prev.png" alt="стрелка" />Назад
-                      </button></a
+                    <button
+                      onclick="document.location='article.html'"
+                      class="slider-head__button slider-head__button--prev"
                     >
-                    <a href="article-next.html">
-                      <button
-                        class="slider-head__button slider-head__button--next"
-                      >
-                        Вперед<img src="img/arrow-next.png" alt="стрелка" />
-                      </button>
-                    </a>
+                      <img src="img/arrow-prev.png" alt="стрелка" />Назад
+                    </button>
+                    <button
+                      onclick="document.location='article-next.html'"
+                      class="slider-head__button slider-head__button--next"
+                    >
+                      Вперед<img src="img/arrow-next.png" alt="стрелка" />
+                    </button>
                   </div>
                 </div>
                 <div class="slider-head__content">
@@ -116,8 +115,9 @@
                 <div class="slider-head__info">
                   <div class="date slider-head__date">
                     <img src="img/clock.png" alt="Дата" />
-                    <span class="date__num">25</span>
-                    <span class="date__month">сентября</span>
+                    <span class="date__num">6</span>
+                    <span class="date__month">августа,</span>
+                    <span class="date__time">10:30</span>
                   </div>
                   <div class="like slider-head__like">
                     <img src="img/like-grey.png" alt="Нравится" />
@@ -142,10 +142,13 @@
             <p class="article__text">
               Идейные соображения высшего порядка, а также рамки и место
               обучения кадров играет важную роль в формировании дальнейших
-              направлений развития. Значимость этих проблем настолько очевидна,
-              что постоянное информационно-пропагандистское обеспечение нашей
-              деятельности влечет за собой процесс внедрения и модернизации
-              дальнейших направлений развития.
+              направлений развития. Идейные соображения высшего порядка, а также
+              рамки и место обучения кадров играет важную роль в формировании
+              дальнейших направлений развития. Значимость этих проблем настолько
+              очевидна, что постоянное информационно-пропагандистское
+              обеспечение нашей деятельности влечет за собой процесс внедрения и
+              модернизации дальнейших направлений развития влечет за собой
+              процесс внедрения.
             </p>
             <h2 class="article__title">Введение НПД в РФ</h2>
             <p class="article__text">
@@ -153,8 +156,7 @@
               обучения кадров играет важную роль в формировании дальнейших
               направлений развития. Значимость этих проблем настолько очевидна,
               что постоянное информационно-пропагандистское обеспечение нашей
-              деятельности влечет за собой процесс внедрения и модернизации
-              дальнейших направлений развития.
+              деятельности влечет за собой процесс внедрения и модернизации.
             </p>
             <p class="article__text">
               Идейные соображения высшего порядка, а также рамки и место
@@ -173,11 +175,13 @@
           <div class="article__sidebar">
             <div class="article__user article-user">
               <div class="article-user__top">
-                <img
-                  src="img/avatar-user.png"
-                  alt="Аватар"
-                  class="article-user__avatar"
-                /><span class="article-user__name">Мира Стахова</span
+                <a href="#"
+                  ><img
+                    src="img/avatar-user.png"
+                    alt="Аватар"
+                    class="article-user__avatar" /></a
+                ><a href="#"
+                  ><span class="article-user__name">Мира Стахова</span></a
                 ><span class="article-user__prof">Фрилансер</span>
                 <span class="article-user__quantity">82 статьи</span>
               </div>
@@ -220,14 +224,17 @@
                       specifically the application of statistical methodology
                     </div>
                     <div class="article-slider__user">
-                      <img
-                        src="img/article-slider-avatar.png"
-                        alt="Аватар"
-                        class="article-slider__avatar"
-                      />
+                      <a href="#"
+                        ><img
+                          src="img/article-slider-avatar.png"
+                          alt="Аватар"
+                          class="article-slider__avatar"
+                      /></a>
                       <div class="article-slider__bio">
-                        <span class="article-slider__bio-name"
-                          >Андрей Вашигаев</span
+                        <a href="#"
+                          ><span class="article-slider__bio-name"
+                            >Андрей Вашигаев</span
+                          ></a
                         >
                         <div class="article-slider__bio-prof">Фотограф</div>
                       </div>
@@ -302,9 +309,11 @@
                 class="article-theme__img"
               />
               <div class="article-theme__block">
-                <h4 class="article-theme__block-title">
-                  20+ инструментов для js-разработчика
-                </h4>
+                <a href="article.html"
+                  ><h4 class="article-theme__block-title">
+                    20+ инструментов для js-разработчика
+                  </h4></a
+                >
                 <p class="article-theme__block-text">
                   Узнайте, какими инструментами вы еще не пользовались, а могли
                   бы. Эти инструменты помогут вам ускорить свою работу или
@@ -372,9 +381,11 @@
               alt="Картинка"
               class="previews__img"
             />
-            <h3 class="previews__title">
-              Техника работы по помидоркам — это как?
-            </h3>
+            <a href="article.html"
+              ><h3 class="previews__title">
+                Техника работы по помидоркам — это как?
+              </h3></a
+            >
             <div class="previews__info">
               <div class="view previews__info-view">
                 <img src="img/view.png" alt="Просмотры" />
@@ -392,7 +403,11 @@
               alt="Картинка"
               class="previews__img"
             />
-            <h3 class="previews__title">Вопросы на собеседовании для джуна</h3>
+            <a href="article.html"
+              ><h3 class="previews__title">
+                Вопросы на собеседовании для джуна
+              </h3></a
+            >
             <div class="previews__info">
               <div class="view previews__info-view">
                 <img src="img/view.png" alt="Просмотры" />
@@ -410,7 +425,11 @@
               alt="Картинка"
               class="previews__img"
             />
-            <h3 class="previews__title">Список стран, куда можно улететь</h3>
+            <a href="article.html"
+              ><h3 class="previews__title">
+                Список стран, куда можно улететь
+              </h3></a
+            >
             <div class="previews__info">
               <div class="view previews__info-view">
                 <img src="img/view.png" alt="Просмотры" />
@@ -428,9 +447,11 @@
               alt="Картинка"
               class="previews__img"
             />
-            <h3 class="previews__title">
-              В вашем портфолио могут быть фейковые работы
-            </h3>
+            <a href="article.html"
+              ><h3 class="previews__title">
+                В вашем портфолио могут быть фейковые работы
+              </h3></a
+            >
             <div class="previews__info">
               <div class="view previews__info-view">
                 <img src="img/view.png" alt="Просмотры" />
@@ -453,21 +474,29 @@
               <h2 class="comments__title">Комментарии</h2>
               <div class="comments__score">19</div>
             </div>
-            <button class="comments__button">
+            <button
+              onclick="document.location='#answer'"
+              class="comments__button"
+            >
               <img src="img/pen.png" alt="Ручка" class="comments__pen" />
               Добавить комментарий
             </button>
           </div>
-          <div class="comments__middle">
+          <div id="comments" class="comments__middle">
             <div class="comments__middle-item">
-              <img
-                src="img/article-slider-avatar.png"
-                alt="Аватар"
-                class="comments__avatar"
-              />
+              <a href="#"
+                ><img
+                  src="img/article-slider-avatar.png"
+                  alt="Аватар"
+                  class="comments__avatar"
+              /></a>
               <div class="comments__content">
                 <div class="comments__content-title">
-                  <div class="comments__content-name">Михаил Степашин</div>
+                  <a href="#"
+                    ><div class="comments__content-name">
+                      Михаил Степашин
+                    </div></a
+                  >
                   <div class="comments__content-date">
                     <span class="comments__day">17</span
                     ><span class="comments__month">июля,</span
@@ -481,7 +510,9 @@
                 </div>
                 <div class="comments__content-nav">
                   <div class="comments__content-answer">
-                    <img src="img/score.svg" alt="Ответ" /> Ответить
+                    <a href="#answer"
+                      ><img src="img/score.svg" alt="Ответ" /> Ответить</a
+                    >
                   </div>
                   <div class="comments__content-block">
                     <img
@@ -505,14 +536,19 @@
               </div>
             </div>
             <div class="comments__middle-item">
-              <img
-                src="img/avatar-user.png"
-                alt="Аватар"
-                class="comments__avatar"
-              />
+              <a href="#"
+                ><img
+                  src="img/avatar-user.png"
+                  alt="Аватар"
+                  class="comments__avatar"
+              /></a>
               <div class="comments__content">
                 <div class="comments__content-title">
-                  <div class="comments__content-name">Михаил Степашин</div>
+                  <a href="#"
+                    ><div class="comments__content-name">
+                      Михаил Степашин
+                    </div></a
+                  >
                   <div class="comments__content-date">
                     <span class="comments__day">17</span
                     ><span class="comments__month">июля,</span
@@ -526,7 +562,9 @@
                 </div>
                 <div class="comments__content-nav">
                   <div class="comments__content-answer">
-                    <img src="img/score.svg" alt="Ответ" /> Ответить
+                    <a href="#answer"
+                      ><img src="img/score.svg" alt="Ответ" /> Ответить</a
+                    >
                   </div>
                   <div class="comments__content-block">
                     <img
@@ -550,10 +588,19 @@
               </div>
             </div>
             <div class="comments__middle-item">
-              <img src="img/avatar.png" alt="Аватар" class="comments__avatar" />
+              <a href="#"
+                ><img
+                  src="img/avatar.png"
+                  alt="Аватар"
+                  class="comments__avatar"
+              /></a>
               <div class="comments__content">
                 <div class="comments__content-title">
-                  <div class="comments__content-name">Михаил Степашин</div>
+                  <a href="#"
+                    ><div class="comments__content-name">
+                      Михаил Степашин
+                    </div></a
+                  >
                   <div class="comments__content-date">
                     <span class="comments__day">17</span
                     ><span class="comments__month">июля,</span
@@ -567,7 +614,9 @@
                 </div>
                 <div class="comments__content-nav">
                   <div class="comments__content-answer">
-                    <img src="img/score.svg" alt="Ответ" /> Ответить
+                    <a href="#answer"
+                      ><img src="img/score.svg" alt="Ответ" /> Ответить</a
+                    >
                   </div>
                   <div class="comments__content-block">
                     <img
@@ -591,14 +640,19 @@
               </div>
             </div>
             <div class="comments__middle-item">
-              <img
-                src="img/info-avatar.png"
-                alt="Аватар"
-                class="comments__avatar"
-              />
+              <a href="#"
+                ><img
+                  src="img/info-avatar.png"
+                  alt="Аватар"
+                  class="comments__avatar"
+              /></a>
               <div class="comments__content">
                 <div class="comments__content-title">
-                  <div class="comments__content-name">Михаил Степашин</div>
+                  <a href="#"
+                    ><div class="comments__content-name">
+                      Михаил Степашин
+                    </div></a
+                  >
                   <div class="comments__content-date">
                     <span class="comments__day">17</span
                     ><span class="comments__month">июля,</span
@@ -612,7 +666,9 @@
                 </div>
                 <div class="comments__content-nav">
                   <div class="comments__content-answer">
-                    <img src="img/score.svg" alt="Ответ" /> Ответить
+                    <a href="#answer"
+                      ><img src="img/score.svg" alt="Ответ" /> Ответить</a
+                    >
                   </div>
                   <div class="comments__content-block">
                     <img
@@ -636,7 +692,7 @@
               </div>
             </div>
           </div>
-          <button class="comments__button-more">
+          <button id="more" class="comments__button-more">
             <img src="img/load.png" alt="Загрузить" />Загрузить еще
           </button>
           <div class="comments__form-block">
@@ -645,18 +701,33 @@
               alt="Аватар"
               class="comments__form-avatar"
             />
-            <form class="comments-form" action="#">
+            <form
+              id="answer"
+              class="comments-form"
+              action="send.php"
+              method="post"
+            >
               <h3 class="comments__form-title">Что вы думаете на этот счет?</h3>
               <div class="comments__form-wrap">
                 <textarea
-                  class="comments__form-textarea"
-                  name="#"
+                  class="comments__form-textarea invalid-comments"
+                  name="message"
                   id="#"
                   cols="30"
                   rows="10"
+                  minlength="100"
+                  required
                 ></textarea>
               </div>
-              <button class="button button--read">
+              <button
+                type="submit"
+                class="
+                  button
+                  comments__form-button
+                  button--read
+                  invalid-comments
+                "
+              >
                 Отправить<img src="img/arrow.svg" alt="Стрелка" />
               </button>
             </form>
@@ -667,8 +738,16 @@
     <section class="subscribe">
       <div class="container subscribe__wrap">
         <h2 class="subscribe__title">Подпишитесь на нашу рассылку</h2>
-        <form class="subscribe__form" action="#" method="post">
-          <input class="subscribe__input" type="email" placeholder="Email" />
+        <form class="subscribe__form" action="send.php" method="post">
+          <div class="invalid-subscribe">
+            <input
+              class="subscribe__input"
+              type="email"
+              placeholder="Email"
+              name="email"
+              required
+            />
+          </div>
           <button class="button subscribe__button">Подписаться</button>
         </form>
       </div>
@@ -733,7 +812,7 @@
               <li class="footer-middle__item"><a href="#">Работа у нас</a></li>
               <li class="footer-middle__item"><a href="#">Реклама</a></li>
               <li class="footer-middle__item">
-                <a href="#">Обратная связь</a>
+                <a href="#">Партнерство</a>
               </li>
             </ul>
           </div>
@@ -794,8 +873,53 @@
         </div>
       </div>
     </footer>
+    <div class="modal-bg"></div>
+    <div class="modal">
+      <a href="#"
+        ><img
+          src="img/modal-close.svg"
+          class="modal__close"
+          alt="icon: modal close"
+      /></a>
+      <h3 class="modal__title">Запрос</h3>
+      <form class="modal__form form" action="send.php" method="post">
+        <input
+          type="text"
+          class="input modal__input"
+          placeholder="Ваше имя*"
+          name="name"
+          required
+          minlength="2"
+        />
+        <input
+          type="tel"
+          class="input modal__input phone-us"
+          placeholder="Номер телефона*"
+          name="phone"
+          required
+        />
+        <input
+          type="email"
+          class="input modal__input"
+          placeholder="Email*"
+          name="email"
+          required
+        />
+        <textarea
+          class="message modal__message"
+          placeholder="Сообщение"
+          name="message"
+        ></textarea>
+
+        <button class="button modal__button" type="submit">Отправить</button>
+        <span class="modal__required">* Обазтельные поля</span>
+      </form>
+    </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/more.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
   </body>
