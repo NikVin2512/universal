@@ -6,9 +6,12 @@
   .header
     &__button
       padding: 9px 38px
+      max-width: 261px
   .navbar
     &__item
       margin-right: 20px
+    &__menu
+      width: 100%
   .useful-articles
     &__preview
       flex-basis: 73%
@@ -200,8 +203,10 @@
     padding: 15px 0
     &__preview
       flex-basis: 65%
+      height: 500px
     &__tabs
       flex-basis: 35%
+      height: 100%
     &__item
       padding-left: 15px
       padding-right: 5px
@@ -229,6 +234,9 @@
           display: none
       &::after
         left: -20%
+    &__text
+      &:hover
+        color: $white
   .content-blog
     max-width: 68%
     padding-right: 15px
@@ -255,6 +263,11 @@
   .comment-blog
     &__text
       font-size: 11px
+  .sidebar-blog
+    &__tags
+      &-item
+        &:hover
+          border: 1px solid #D9DADB
   .popular-chapter
     &--mt
       margin-top: 80px
@@ -288,6 +301,7 @@
     &-article
       width: 100%
       &__main
+        width: 100%
         &-bg
           object-fit: contain
           object-position: right
@@ -350,6 +364,10 @@
       margin-top: 0
       &__img
         min-width: 100%
+    &__tags
+      &-item
+        &:hover
+          border: 1px solid #D9DADB
   .previews
     padding: 40px 0 60px 0
     &__wrap
@@ -361,6 +379,8 @@
       &:nth-child(3),&:nth-child(4)
         margin-bottom: 0
   .comments
+    &__wrap
+      max-width: 100%
     &__title
       font-size: 30px
     &__score
@@ -439,6 +459,7 @@
   .useful-articles
     &__preview
       flex-basis: 65%
+      height: 100%
     &__tabs
       flex-basis: 37%
     &__wrap
@@ -484,6 +505,7 @@
       line-height: 30px
       font-size: 24px
       width: 60%
+      margin-top: 0
   .display-none
     display: none
   .blog-article
@@ -646,6 +668,9 @@
     &-subscribe
       align-items: center
       padding-bottom: 10px
+  .button
+    &-up
+      display: none
 @media (max-width: 576px)
   body
     &::after
@@ -660,11 +685,14 @@
       position: absolute
       right: 0
       bottom: 0
+    &__avatar
+      width: 35px
+      height: 35px
   .info-article
     &__title
       line-height: 30px
       font-size: 20px
-      width: 80%
+      width: 70%
       margin-bottom: 15px
   .button
     padding: 7px 15px
@@ -803,16 +831,18 @@
       margin-top: 10px
     &__message
       height: 80px
+  .button
+    padding-top: 5px
+    padding-bottom: 5px
+    min-height: 30px
 @media (max-width: 487px)
   .useful-articles
     &__info
       height: 65%
-    &__name
-      display: none
-    &__prof
-      display: none
     &__chapter
       font-size: 10px
+    &__block
+      margin-right: 15px
   .info-article
     &__title
       line-height: 24px
@@ -830,6 +860,9 @@
     &-slider
       margin-bottom: 15px
     &-article
+      height: 100%
+      &__title
+        width: 100%
       &__main
         margin-bottom: 15px
         &-bg
@@ -973,9 +1006,14 @@
         font-size: 11px
       &-score
         font-size: 11px
+
 @media (max-width: 375px)
+  .useful-articles
+    &__preview
+      height: 250px
   .info
     &-slider
+      height: 270px
       &__slide
         height: 100%
         &::after
@@ -983,14 +1021,19 @@
       &__content
         top: 35px
       &__img
-        height: 80%
+        height: 270px
       &__title
         max-width: 100%
         font-size: 20px
         line-height: 25px
         margin-bottom: 15px
-      &__name, &__prof
-        display: none
+      &__user
+        flex-direction: row
+        align-items: start
+      &__flex
+        align-items: start
+      &__avatar
+        margin-right: 5px
       &__tag
         top: 10px
         left: 10px
@@ -1000,6 +1043,12 @@
       &__main
         &-bg
           display: none
+  .info-article
+    &__title
+      font-size: 18px
+      line-height: 24px
+      margin-top: 5px
+      margin-bottom: 15px
   .article
     padding-top: 30px
     &-user
@@ -1020,6 +1069,8 @@
           margin-right: 0
       &-text
         display: none
+  .swiper-pagination
+    margin-bottom: 10px
 @media (max-width: 340px)
   .info
     &-slider
